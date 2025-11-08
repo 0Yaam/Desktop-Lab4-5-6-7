@@ -1,0 +1,386 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\TruongDan\\Downloads\\Lab_Basic_Command\\Lab_Basic_Command\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A07CA1A9-6474-43C2-97DC-A975D8FD843C}|Lab_Basic_Command\\Lab_Basic_Command.csproj|c:\\users\\truongdan\\downloads\\lab_basic_command\\lab_basic_command\\lab_basic_command\\accountmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A07CA1A9-6474-43C2-97DC-A975D8FD843C}|Lab_Basic_Command\\Lab_Basic_Command.csproj|solutionrelative:lab_basic_command\\accountmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A07CA1A9-6474-43C2-97DC-A975D8FD843C}|Lab_Basic_Command\\Lab_Basic_Command.csproj|c:\\users\\truongdan\\downloads\\lab_basic_command\\lab_basic_command\\lab_basic_command\\accountmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A07CA1A9-6474-43C2-97DC-A975D8FD843C}|Lab_Basic_Command\\Lab_Basic_Command.csproj|solutionrelative:lab_basic_command\\accountmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A07CA1A9-6474-43C2-97DC-A975D8FD843C}|Lab_Basic_Command\\Lab_Basic_Command.csproj|c:\\users\\truongdan\\downloads\\lab_basic_command\\lab_basic_command\\lab_basic_command\\rolelistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A07CA1A9-6474-43C2-97DC-A975D8FD843C}|Lab_Basic_Command\\Lab_Basic_Command.csproj|solutionrelative:lab_basic_command\\rolelistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A07CA1A9-6474-43C2-97DC-A975D8FD843C}|Lab_Basic_Command\\Lab_Basic_Command.csproj|C:\\Users\\TruongDan\\Downloads\\Lab_Basic_Command\\Lab_Basic_Command\\lab_basic_command\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A07CA1A9-6474-43C2-97DC-A975D8FD843C}|Lab_Basic_Command\\Lab_Basic_Command.csproj|solutionrelative:lab_basic_command\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A07CA1A9-6474-43C2-97DC-A975D8FD843C}|Lab_Basic_Command\\Lab_Basic_Command.csproj|C:\\Users\\TruongDan\\Downloads\\Lab_Basic_Command\\Lab_Basic_Command\\lab_basic_command\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A07CA1A9-6474-43C2-97DC-A975D8FD843C}|Lab_Basic_Command\\Lab_Basic_Command.csproj|solutionrelative:lab_basic_command\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A07CA1A9-6474-43C2-97DC-A975D8FD843C}|Lab_Basic_Command\\Lab_Basic_Command.csproj|c:\\users\\truongdan\\downloads\\lab_basic_command\\lab_basic_command\\lab_basic_command\\billsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A07CA1A9-6474-43C2-97DC-A975D8FD843C}|Lab_Basic_Command\\Lab_Basic_Command.csproj|solutionrelative:lab_basic_command\\billsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A07CA1A9-6474-43C2-97DC-A975D8FD843C}|Lab_Basic_Command\\Lab_Basic_Command.csproj|C:\\Users\\TruongDan\\Downloads\\Lab_Basic_Command\\Lab_Basic_Command\\lab_basic_command\\billdetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A07CA1A9-6474-43C2-97DC-A975D8FD843C}|Lab_Basic_Command\\Lab_Basic_Command.csproj|solutionrelative:lab_basic_command\\billdetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A07CA1A9-6474-43C2-97DC-A975D8FD843C}|Lab_Basic_Command\\Lab_Basic_Command.csproj|c:\\users\\truongdan\\downloads\\lab_basic_command\\lab_basic_command\\lab_basic_command\\foodform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A07CA1A9-6474-43C2-97DC-A975D8FD843C}|Lab_Basic_Command\\Lab_Basic_Command.csproj|solutionrelative:lab_basic_command\\foodform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A07CA1A9-6474-43C2-97DC-A975D8FD843C}|Lab_Basic_Command\\Lab_Basic_Command.csproj|C:\\Users\\TruongDan\\Downloads\\Lab_Basic_Command\\Lab_Basic_Command\\lab_basic_command\\categoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A07CA1A9-6474-43C2-97DC-A975D8FD843C}|Lab_Basic_Command\\Lab_Basic_Command.csproj|solutionrelative:lab_basic_command\\categoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A07CA1A9-6474-43C2-97DC-A975D8FD843C}|Lab_Basic_Command\\Lab_Basic_Command.csproj|c:\\users\\truongdan\\downloads\\lab_basic_command\\lab_basic_command\\lab_basic_command\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A07CA1A9-6474-43C2-97DC-A975D8FD843C}|Lab_Basic_Command\\Lab_Basic_Command.csproj|solutionrelative:lab_basic_command\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A07CA1A9-6474-43C2-97DC-A975D8FD843C}|Lab_Basic_Command\\Lab_Basic_Command.csproj|c:\\users\\truongdan\\downloads\\lab_basic_command\\lab_basic_command\\lab_basic_command\\billlogform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A07CA1A9-6474-43C2-97DC-A975D8FD843C}|Lab_Basic_Command\\Lab_Basic_Command.csproj|solutionrelative:lab_basic_command\\billlogform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A07CA1A9-6474-43C2-97DC-A975D8FD843C}|Lab_Basic_Command\\Lab_Basic_Command.csproj|C:\\Users\\TruongDan\\Downloads\\Lab_Basic_Command\\Lab_Basic_Command\\lab_basic_command\\billsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A07CA1A9-6474-43C2-97DC-A975D8FD843C}|Lab_Basic_Command\\Lab_Basic_Command.csproj|solutionrelative:lab_basic_command\\billsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TruongDan\\AppData\\Local\\Temp\\n1m5rgje..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A07CA1A9-6474-43C2-97DC-A975D8FD843C}|Lab_Basic_Command\\Lab_Basic_Command.csproj|C:\\Users\\TruongDan\\Downloads\\Lab_Basic_Command\\Lab_Basic_Command\\lab_basic_command\\categoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A07CA1A9-6474-43C2-97DC-A975D8FD843C}|Lab_Basic_Command\\Lab_Basic_Command.csproj|solutionrelative:lab_basic_command\\categoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A07CA1A9-6474-43C2-97DC-A975D8FD843C}|Lab_Basic_Command\\Lab_Basic_Command.csproj|C:\\Users\\TruongDan\\Downloads\\Lab_Basic_Command\\Lab_Basic_Command\\lab_basic_command\\foodform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A07CA1A9-6474-43C2-97DC-A975D8FD843C}|Lab_Basic_Command\\Lab_Basic_Command.csproj|solutionrelative:lab_basic_command\\foodform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TruongDan\\AppData\\Local\\Temp\\vmndugtw..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A07CA1A9-6474-43C2-97DC-A975D8FD843C}|Lab_Basic_Command\\Lab_Basic_Command.csproj|C:\\Users\\TruongDan\\Downloads\\Lab_Basic_Command\\Lab_Basic_Command\\lab_basic_command\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A07CA1A9-6474-43C2-97DC-A975D8FD843C}|Lab_Basic_Command\\Lab_Basic_Command.csproj|solutionrelative:lab_basic_command\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A07CA1A9-6474-43C2-97DC-A975D8FD843C}|Lab_Basic_Command\\Lab_Basic_Command.csproj|C:\\Users\\TruongDan\\Downloads\\Lab_Basic_Command\\Lab_Basic_Command\\lab_basic_command\\rolelistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A07CA1A9-6474-43C2-97DC-A975D8FD843C}|Lab_Basic_Command\\Lab_Basic_Command.csproj|solutionrelative:lab_basic_command\\rolelistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A07CA1A9-6474-43C2-97DC-A975D8FD843C}|Lab_Basic_Command\\Lab_Basic_Command.csproj|C:\\Users\\TruongDan\\Downloads\\Lab_Basic_Command\\Lab_Basic_Command\\lab_basic_command\\billlogform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A07CA1A9-6474-43C2-97DC-A975D8FD843C}|Lab_Basic_Command\\Lab_Basic_Command.csproj|solutionrelative:lab_basic_command\\billlogform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A07CA1A9-6474-43C2-97DC-A975D8FD843C}|Lab_Basic_Command\\Lab_Basic_Command.csproj|C:\\Users\\TruongDan\\Downloads\\Lab_Basic_Command\\Lab_Basic_Command\\lab_basic_command\\billdetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A07CA1A9-6474-43C2-97DC-A975D8FD843C}|Lab_Basic_Command\\Lab_Basic_Command.csproj|solutionrelative:lab_basic_command\\billdetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A07CA1A9-6474-43C2-97DC-A975D8FD843C}|Lab_Basic_Command\\Lab_Basic_Command.csproj|C:\\Users\\TruongDan\\Downloads\\Lab_Basic_Command\\Lab_Basic_Command\\lab_basic_command\\configs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A07CA1A9-6474-43C2-97DC-A975D8FD843C}|Lab_Basic_Command\\Lab_Basic_Command.csproj|solutionrelative:lab_basic_command\\configs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TruongDan\\AppData\\Local\\Temp\\tdqcggom..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TruongDan\\AppData\\Local\\Temp\\n1m5rgje..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TruongDan\\AppData\\Local\\Temp\\n1m5rgje..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|ResultFrame"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AccountManager.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\TruongDan\\Downloads\\Lab_Basic_Command\\Lab_Basic_Command\\Lab_Basic_Command\\AccountManager.cs",
+              "RelativeDocumentMoniker": "Lab_Basic_Command\\AccountManager.cs",
+              "ToolTip": "C:\\Users\\TruongDan\\Downloads\\Lab_Basic_Command\\Lab_Basic_Command\\Lab_Basic_Command\\AccountManager.cs [Design]",
+              "RelativeToolTip": "Lab_Basic_Command\\AccountManager.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T05:17:04.059Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BillsForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\TruongDan\\Downloads\\Lab_Basic_Command\\Lab_Basic_Command\\Lab_Basic_Command\\BillsForm.cs",
+              "RelativeDocumentMoniker": "Lab_Basic_Command\\BillsForm.cs",
+              "ToolTip": "C:\\Users\\TruongDan\\Downloads\\Lab_Basic_Command\\Lab_Basic_Command\\Lab_Basic_Command\\BillsForm.cs [Design]",
+              "RelativeToolTip": "Lab_Basic_Command\\BillsForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T05:01:45.107Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AccountManager.cs",
+              "DocumentMoniker": "C:\\Users\\TruongDan\\Downloads\\Lab_Basic_Command\\Lab_Basic_Command\\Lab_Basic_Command\\AccountManager.cs",
+              "RelativeDocumentMoniker": "Lab_Basic_Command\\AccountManager.cs",
+              "ToolTip": "C:\\Users\\TruongDan\\Downloads\\Lab_Basic_Command\\Lab_Basic_Command\\Lab_Basic_Command\\AccountManager.cs",
+              "RelativeToolTip": "Lab_Basic_Command\\AccountManager.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAADgv2cAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T12:33:00.389Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\TruongDan\\Downloads\\Lab_Basic_Command\\Lab_Basic_Command\\Lab_Basic_Command\\MainForm.cs",
+              "RelativeDocumentMoniker": "Lab_Basic_Command\\MainForm.cs",
+              "ToolTip": "C:\\Users\\TruongDan\\Downloads\\Lab_Basic_Command\\Lab_Basic_Command\\Lab_Basic_Command\\MainForm.cs [Design]",
+              "RelativeToolTip": "Lab_Basic_Command\\MainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T09:31:12.858Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\TruongDan\\Downloads\\Lab_Basic_Command\\Lab_Basic_Command\\Lab_Basic_Command\\MainForm.cs",
+              "RelativeDocumentMoniker": "Lab_Basic_Command\\MainForm.cs",
+              "ToolTip": "C:\\Users\\TruongDan\\Downloads\\Lab_Basic_Command\\Lab_Basic_Command\\Lab_Basic_Command\\MainForm.cs",
+              "RelativeToolTip": "Lab_Basic_Command\\MainForm.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAswLsAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T09:20:11.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RoleListForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\TruongDan\\Downloads\\Lab_Basic_Command\\Lab_Basic_Command\\Lab_Basic_Command\\RoleListForm.cs",
+              "RelativeDocumentMoniker": "Lab_Basic_Command\\RoleListForm.cs",
+              "ToolTip": "C:\\Users\\TruongDan\\Downloads\\Lab_Basic_Command\\Lab_Basic_Command\\Lab_Basic_Command\\RoleListForm.cs [Design]",
+              "RelativeToolTip": "Lab_Basic_Command\\RoleListForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T05:16:41.157Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FoodForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\TruongDan\\Downloads\\Lab_Basic_Command\\Lab_Basic_Command\\Lab_Basic_Command\\FoodForm.cs",
+              "RelativeDocumentMoniker": "Lab_Basic_Command\\FoodForm.cs",
+              "ToolTip": "C:\\Users\\TruongDan\\Downloads\\Lab_Basic_Command\\Lab_Basic_Command\\Lab_Basic_Command\\FoodForm.cs [Design]",
+              "RelativeToolTip": "Lab_Basic_Command\\FoodForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T05:17:00.954Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CategoryForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\TruongDan\\Downloads\\Lab_Basic_Command\\Lab_Basic_Command\\Lab_Basic_Command\\CategoryForm.cs",
+              "RelativeDocumentMoniker": "Lab_Basic_Command\\CategoryForm.cs",
+              "ToolTip": "C:\\Users\\TruongDan\\Downloads\\Lab_Basic_Command\\Lab_Basic_Command\\Lab_Basic_Command\\CategoryForm.cs [Design]",
+              "RelativeToolTip": "Lab_Basic_Command\\CategoryForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T12:31:31.135Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LoginForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\TruongDan\\Downloads\\Lab_Basic_Command\\Lab_Basic_Command\\Lab_Basic_Command\\LoginForm.cs",
+              "RelativeDocumentMoniker": "Lab_Basic_Command\\LoginForm.cs",
+              "ToolTip": "C:\\Users\\TruongDan\\Downloads\\Lab_Basic_Command\\Lab_Basic_Command\\Lab_Basic_Command\\LoginForm.cs [Design]",
+              "RelativeToolTip": "Lab_Basic_Command\\LoginForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T05:13:24.594Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BillDetailsForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\TruongDan\\Downloads\\Lab_Basic_Command\\Lab_Basic_Command\\Lab_Basic_Command\\BillDetailsForm.cs",
+              "RelativeDocumentMoniker": "Lab_Basic_Command\\BillDetailsForm.cs",
+              "ToolTip": "C:\\Users\\TruongDan\\Downloads\\Lab_Basic_Command\\Lab_Basic_Command\\Lab_Basic_Command\\BillDetailsForm.cs [Design]",
+              "RelativeToolTip": "Lab_Basic_Command\\BillDetailsForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T12:32:36.789Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BillLogForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\TruongDan\\Downloads\\Lab_Basic_Command\\Lab_Basic_Command\\Lab_Basic_Command\\BillLogForm.cs",
+              "RelativeDocumentMoniker": "Lab_Basic_Command\\BillLogForm.cs",
+              "ToolTip": "C:\\Users\\TruongDan\\Downloads\\Lab_Basic_Command\\Lab_Basic_Command\\Lab_Basic_Command\\BillLogForm.cs [Design]",
+              "RelativeToolTip": "Lab_Basic_Command\\BillLogForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T05:01:40.974Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BillsForm.cs",
+              "DocumentMoniker": "C:\\Users\\TruongDan\\Downloads\\Lab_Basic_Command\\Lab_Basic_Command\\Lab_Basic_Command\\BillsForm.cs",
+              "RelativeDocumentMoniker": "Lab_Basic_Command\\BillsForm.cs",
+              "ToolTip": "C:\\Users\\TruongDan\\Downloads\\Lab_Basic_Command\\Lab_Basic_Command\\Lab_Basic_Command\\BillsForm.cs",
+              "RelativeToolTip": "Lab_Basic_Command\\BillsForm.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowBIAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T12:31:55.867Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "SQLQuery1.sql ",
+              "DocumentMoniker": "C:\\Users\\TruongDan\\AppData\\Local\\Temp\\n1m5rgje..sql",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\n1m5rgje..sql",
+              "ToolTip": "SQLQuery1.sql *",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-11-08T04:59:57.751Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CategoryForm.cs",
+              "DocumentMoniker": "C:\\Users\\TruongDan\\Downloads\\Lab_Basic_Command\\Lab_Basic_Command\\Lab_Basic_Command\\CategoryForm.cs",
+              "RelativeDocumentMoniker": "Lab_Basic_Command\\CategoryForm.cs",
+              "ToolTip": "C:\\Users\\TruongDan\\Downloads\\Lab_Basic_Command\\Lab_Basic_Command\\Lab_Basic_Command\\CategoryForm.cs",
+              "RelativeToolTip": "Lab_Basic_Command\\CategoryForm.cs",
+              "ViewState": "AgIAALIAAAAAAAAAAAAawBYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T12:31:32.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "vmndugtw..sql",
+              "DocumentMoniker": "C:\\Users\\TruongDan\\AppData\\Local\\Temp\\vmndugtw..sql",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\vmndugtw..sql",
+              "ToolTip": "C:\\Users\\TruongDan\\AppData\\Local\\Temp\\vmndugtw..sql",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\vmndugtw..sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-11-07T09:06:27.74Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "FoodForm.cs",
+              "DocumentMoniker": "C:\\Users\\TruongDan\\Downloads\\Lab_Basic_Command\\Lab_Basic_Command\\Lab_Basic_Command\\FoodForm.cs",
+              "RelativeDocumentMoniker": "Lab_Basic_Command\\FoodForm.cs",
+              "ToolTip": "C:\\Users\\TruongDan\\Downloads\\Lab_Basic_Command\\Lab_Basic_Command\\Lab_Basic_Command\\FoodForm.cs",
+              "RelativeToolTip": "Lab_Basic_Command\\FoodForm.cs",
+              "ViewState": "AgIAAIYAAAAAAAAAAAAhwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T09:18:55.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "RoleListForm.cs",
+              "DocumentMoniker": "C:\\Users\\TruongDan\\Downloads\\Lab_Basic_Command\\Lab_Basic_Command\\Lab_Basic_Command\\RoleListForm.cs",
+              "RelativeDocumentMoniker": "Lab_Basic_Command\\RoleListForm.cs",
+              "ToolTip": "C:\\Users\\TruongDan\\Downloads\\Lab_Basic_Command\\Lab_Basic_Command\\Lab_Basic_Command\\RoleListForm.cs",
+              "RelativeToolTip": "Lab_Basic_Command\\RoleListForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T12:28:09.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\TruongDan\\Downloads\\Lab_Basic_Command\\Lab_Basic_Command\\Lab_Basic_Command\\Program.cs",
+              "RelativeDocumentMoniker": "Lab_Basic_Command\\Program.cs",
+              "ToolTip": "C:\\Users\\TruongDan\\Downloads\\Lab_Basic_Command\\Lab_Basic_Command\\Lab_Basic_Command\\Program.cs",
+              "RelativeToolTip": "Lab_Basic_Command\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T12:55:56.282Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "BillLogForm.cs",
+              "DocumentMoniker": "C:\\Users\\TruongDan\\Downloads\\Lab_Basic_Command\\Lab_Basic_Command\\Lab_Basic_Command\\BillLogForm.cs",
+              "RelativeDocumentMoniker": "Lab_Basic_Command\\BillLogForm.cs",
+              "ToolTip": "C:\\Users\\TruongDan\\Downloads\\Lab_Basic_Command\\Lab_Basic_Command\\Lab_Basic_Command\\BillLogForm.cs",
+              "RelativeToolTip": "Lab_Basic_Command\\BillLogForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T12:32:18.285Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "BillDetailsForm.cs",
+              "DocumentMoniker": "C:\\Users\\TruongDan\\Downloads\\Lab_Basic_Command\\Lab_Basic_Command\\Lab_Basic_Command\\BillDetailsForm.cs",
+              "RelativeDocumentMoniker": "Lab_Basic_Command\\BillDetailsForm.cs",
+              "ToolTip": "C:\\Users\\TruongDan\\Downloads\\Lab_Basic_Command\\Lab_Basic_Command\\Lab_Basic_Command\\BillDetailsForm.cs",
+              "RelativeToolTip": "Lab_Basic_Command\\BillDetailsForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T12:24:29.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Configs.cs",
+              "DocumentMoniker": "C:\\Users\\TruongDan\\Downloads\\Lab_Basic_Command\\Lab_Basic_Command\\Lab_Basic_Command\\Configs.cs",
+              "RelativeDocumentMoniker": "Lab_Basic_Command\\Configs.cs",
+              "ToolTip": "C:\\Users\\TruongDan\\Downloads\\Lab_Basic_Command\\Lab_Basic_Command\\Lab_Basic_Command\\Configs.cs",
+              "RelativeToolTip": "Lab_Basic_Command\\Configs.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T08:26:25.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "tdqcggom..sql",
+              "DocumentMoniker": "C:\\Users\\TruongDan\\AppData\\Local\\Temp\\tdqcggom..sql",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\tdqcggom..sql",
+              "ToolTip": "C:\\Users\\TruongDan\\AppData\\Local\\Temp\\tdqcggom..sql",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\tdqcggom..sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-11-07T08:25:12.323Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

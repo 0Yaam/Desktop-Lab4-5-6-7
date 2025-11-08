@@ -1,0 +1,269 @@
+USE RestaurantManagement;
+GO
+
+/* =========================
+   BỔ SUNG BÀN (TableFood)
+   ========================= */
+-- Thêm bàn 3..12 nếu chưa có
+DECLARE @i INT = 3;
+WHILE @i <= 12
+BEGIN
+    IF NOT EXISTS (SELECT 1 FROM TableFood WHERE Name = N'Bàn ' + CONVERT(NVARCHAR(10), @i))
+        INSERT INTO TableFood(Name, Status) VALUES (N'Bàn ' + CONVERT(NVARCHAR(10), @i), N'Trống');
+    SET @i += 1;
+END
+GO
+
+/* =========================
+   ĐẢM BẢO CATEGORY CÓ SẴN
+   ========================= */
+IF NOT EXISTS (SELECT 1 FROM Category WHERE Name = N'Đồ uống')
+    INSERT INTO Category(Name, [Type]) VALUES (N'Đồ uống', NULL);
+IF NOT EXISTS (SELECT 1 FROM Category WHERE Name = N'Đồ ăn')
+    INSERT INTO Category(Name, [Type]) VALUES (N'Đồ ăn', NULL);
+IF NOT EXISTS (SELECT 1 FROM Category WHERE Name = N'Tráng miệng')
+    INSERT INTO Category(Name, [Type]) VALUES (N'Tráng miệng', NULL);
+GO
+
+/* =========================
+   BỔ SUNG MÓN ĂN/ĐỒ UỐNG (Food)
+   (chỉ thêm nếu chưa có theo Name)
+   ========================= */
+-- Đồ uống
+IF NOT EXISTS (SELECT 1 FROM Food WHERE Name = N'Cà phê đen')
+INSERT INTO Food(Name, Unit, FoodCategoryID, Price, Notes)
+SELECT N'Cà phê đen', N'Ly', c.ID, 15000, N'Nóng' FROM Category c WHERE c.Name = N'Đồ uống';
+
+IF NOT EXISTS (SELECT 1 FROM Food WHERE Name = N'Cà phê sữa')
+INSERT INTO Food(Name, Unit, FoodCategoryID, Price, Notes)
+SELECT N'Cà phê sữa', N'Ly', c.ID, 20000, N'Ngọt vừa' FROM Category c WHERE c.Name = N'Đồ uống';
+
+IF NOT EXISTS (SELECT 1 FROM Food WHERE Name = N'Trà đá')
+INSERT INTO Food(Name, Unit, FoodCategoryID, Price, Notes)
+SELECT N'Trà đá', N'Ly', c.ID, 10000, N'' FROM Category c WHERE c.Name = N'Đồ uống';
+
+IF NOT EXISTS (SELECT 1 FROM Food WHERE Name = N'Nước cam')
+INSERT INTO Food(Name, Unit, FoodCategoryID, Price, Notes)
+SELECT N'Nước cam', N'Ly', c.ID, 25000, N'Tươi' FROM Category c WHERE c.Name = N'Đồ uống';
+
+IF NOT EXISTS (SELECT 1 FROM Food WHERE Name = N'Sinh tố dâu')
+INSERT INTO Food(Name, Unit, FoodCategoryID, Price, Notes)
+SELECT N'Sinh tố dâu', N'Ly', c.ID, 30000, N'Ngọt vừa' FROM Category c WHERE c.Name = N'Đồ uống';
+
+IF NOT EXISTS (SELECT 1 FROM Food WHERE Name = N'Trà đào')
+INSERT INTO Food(Name, Unit, FoodCategoryID, Price, Notes)
+SELECT N'Trà đào', N'Ly', c.ID, 28000, N'Đào miếng' FROM Category c WHERE c.Name = N'Đồ uống';
+
+-- Đồ ăn
+IF NOT EXISTS (SELECT 1 FROM Food WHERE Name = N'Phở bò')
+INSERT INTO Food(Name, Unit, FoodCategoryID, Price, Notes)
+SELECT N'Phở bò', N'Tô', c.ID, 50000, N'Nước dùng thơm' FROM Category c WHERE c.Name = N'Đồ ăn';
+
+IF NOT EXISTS (SELECT 1 FROM Food WHERE Name = N'Mì xào')
+INSERT INTO Food(Name, Unit, FoodCategoryID, Price, Notes)
+SELECT N'Mì xào', N'Tô', c.ID, 45000, N'Rau tươi' FROM Category c WHERE c.Name = N'Đồ ăn';
+
+IF NOT EXISTS (SELECT 1 FROM Food WHERE Name = N'Bún chả')
+INSERT INTO Food(Name, Unit, FoodCategoryID, Price, Notes)
+SELECT N'Bún chả', N'Tô', c.ID, 55000, N'Vừa miệng' FROM Category c WHERE c.Name = N'Đồ ăn';
+
+IF NOT EXISTS (SELECT 1 FROM Food WHERE Name = N'Gà rán')
+INSERT INTO Food(Name, Unit, FoodCategoryID, Price, Notes)
+SELECT N'Gà rán', N'Phần', c.ID, 60000, N'Giòn' FROM Category c WHERE c.Name = N'Đồ ăn';
+
+IF NOT EXISTS (SELECT 1 FROM Food WHERE Name = N'Cơm gà xối mỡ')
+INSERT INTO Food(Name, Unit, FoodCategoryID, Price, Notes)
+SELECT N'Cơm gà xối mỡ', N'Phần', c.ID, 55000, N'Dưa chua' FROM Category c WHERE c.Name = N'Đồ ăn';
+
+-- Tráng miệng
+IF NOT EXISTS (SELECT 1 FROM Food WHERE Name = N'Kem vani')
+INSERT INTO Food(Name, Unit, FoodCategoryID, Price, Notes)
+SELECT N'Kem vani', N'Cốc', c.ID, 20000, N'' FROM Category c WHERE c.Name = N'Tráng miệng';
+
+IF NOT EXISTS (SELECT 1 FROM Food WHERE Name = N'Bánh flan')
+INSERT INTO Food(Name, Unit, FoodCategoryID, Price, Notes)
+SELECT N'Bánh flan', N'Cái', c.ID, 25000, N'Mịn' FROM Category c WHERE c.Name = N'Tráng miệng';
+
+IF NOT EXISTS (SELECT 1 FROM Food WHERE Name = N'Chè đậu xanh')
+INSERT INTO Food(Name, Unit, FoodCategoryID, Price, Notes)
+SELECT N'Chè đậu xanh', N'Tô', c.ID, 15000, N'' FROM Category c WHERE c.Name = N'Tráng miệng';
+
+IF NOT EXISTS (SELECT 1 FROM Food WHERE Name = N'Bánh mousse socola')
+INSERT INTO Food(Name, Unit, FoodCategoryID, Price, Notes)
+SELECT N'Bánh mousse socola', N'Cái', c.ID, 35000, N'Ngọt vừa' FROM Category c WHERE c.Name = N'Tráng miệng';
+
+IF NOT EXISTS (SELECT 1 FROM Food WHERE Name = N'Trái cây dĩa')
+INSERT INTO Food(Name, Unit, FoodCategoryID, Price, Notes)
+SELECT N'Trái cây dĩa', N'Dĩa', c.ID, 30000, N'Tươi' FROM Category c WHERE c.Name = N'Tráng miệng';
+GO
+
+/* =========================
+   HÀM TÍNH LẠI TOTAL CHO 1 BILL
+   ========================= */
+IF OBJECT_ID('dbo.__RecalcBillTotal', 'P') IS NOT NULL DROP PROCEDURE dbo.__RecalcBillTotal;
+GO
+CREATE PROCEDURE dbo.__RecalcBillTotal
+    @BillId INT
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    DECLARE @SubTotal FLOAT =
+    (
+        SELECT SUM(Quantity * UnitPrice*1.0)
+        FROM BillDetails
+        WHERE BillID = @BillId
+    );
+
+    IF @SubTotal IS NULL SET @SubTotal = 0;
+
+    UPDATE b
+    SET TotalAmount = @SubTotal * (1 - ISNULL(Discount,0))
+    FROM Bills b
+    WHERE b.ID = @BillId;
+END
+GO
+
+/* =========================
+   TẠO VÀ CHÈN HÓA ĐƠN + CHI TIẾT
+   (rải ngày 10–11/2025, admin/staff)
+   ========================= */
+-- Helper: lấy FoodID theo tên
+DECLARE @idCafeDen INT = (SELECT ID FROM Food WHERE Name = N'Cà phê đen');
+DECLARE @idCafeSua INT = (SELECT ID FROM Food WHERE Name = N'Cà phê sữa');
+DECLARE @idTraDa   INT = (SELECT ID FROM Food WHERE Name = N'Trà đá');
+DECLARE @idNuocCam INT = (SELECT ID FROM Food WHERE Name = N'Nước cam');
+DECLARE @idPhoBo   INT = (SELECT ID FROM Food WHERE Name = N'Phở bò');
+DECLARE @idMiXao   INT = (SELECT ID FROM Food WHERE Name = N'Mì xào');
+DECLARE @idBunCha  INT = (SELECT ID FROM Food WHERE Name = N'Bún chả');
+DECLARE @idGaRan   INT = (SELECT ID FROM Food WHERE Name = N'Gà rán');
+DECLARE @idFlan    INT = (SELECT ID FROM Food WHERE Name = N'Bánh flan');
+DECLARE @idKemVani INT = (SELECT ID FROM Food WHERE Name = N'Kem vani');
+DECLARE @idTraDao  INT = (SELECT ID FROM Food WHERE Name = N'Trà đào');
+DECLARE @idComGXM  INT = (SELECT ID FROM Food WHERE Name = N'Cơm gà xối mỡ');
+DECLARE @idTraiCay INT = (SELECT ID FROM Food WHERE Name = N'Trái cây dĩa');
+
+-- Bill 1: 2025-10-02 09:15 (staff) - Bàn 1
+DECLARE @b1 INT;
+INSERT INTO Bills(Account, CreatedDate, Discount, TotalAmount)
+VALUES (N'staff', '2025-10-02T09:15:00', 0.00, 0);
+SET @b1 = SCOPE_IDENTITY();
+INSERT INTO BillDetails(BillID, FoodID, Quantity, UnitPrice)
+VALUES
+(@b1, @idCafeDen, 2, (SELECT Price FROM Food WHERE ID=@idCafeDen)),
+(@b1, @idFlan,    1, (SELECT Price FROM Food WHERE ID=@idFlan));
+EXEC dbo.__RecalcBillTotal @b1;
+
+-- Bill 2: 2025-10-15 12:05 (admin) - Bàn 3 (giảm 10%)
+DECLARE @b2 INT;
+INSERT INTO Bills(Account, CreatedDate, Discount, TotalAmount)
+VALUES (N'admin', '2025-10-15T12:05:00', 0.10, 0);
+SET @b2 = SCOPE_IDENTITY();
+INSERT INTO BillDetails(BillID, FoodID, Quantity, UnitPrice)
+VALUES
+(@b2, @idPhoBo,  2, (SELECT Price FROM Food WHERE ID=@idPhoBo)),
+(@b2, @idTraDa,  2, (SELECT Price FROM Food WHERE ID=@idTraDa));
+EXEC dbo.__RecalcBillTotal @b2;
+
+-- Bill 3: 2025-10-28 18:40 (staff) - Bàn 5
+DECLARE @b3 INT;
+INSERT INTO Bills(Account, CreatedDate, Discount, TotalAmount)
+VALUES (N'staff', '2025-10-28T18:40:00', 0.00, 0);
+SET @b3 = SCOPE_IDENTITY();
+INSERT INTO BillDetails(BillID, FoodID, Quantity, UnitPrice)
+VALUES
+(@b3, @idMiXao,  1, (SELECT Price FROM Food WHERE ID=@idMiXao)),
+(@b3, @idGaRan,  1, (SELECT Price FROM Food WHERE ID=@idGaRan)),
+(@b3, @idNuocCam,2, (SELECT Price FROM Food WHERE ID=@idNuocCam));
+EXEC dbo.__RecalcBillTotal @b3;
+
+-- Bill 4: 2025-11-01 08:20 (admin) - Bàn 2 (giảm 5%)
+DECLARE @b4 INT;
+INSERT INTO Bills(Account, CreatedDate, Discount, TotalAmount)
+VALUES (N'admin', '2025-11-01T08:20:00', 0.05, 0);
+SET @b4 = SCOPE_IDENTITY();
+INSERT INTO BillDetails(BillID, FoodID, Quantity, UnitPrice)
+VALUES
+(@b4, @idCafeSua, 2, (SELECT Price FROM Food WHERE ID=@idCafeSua)),
+(@b4, @idTraDao,  1, (SELECT Price FROM Food WHERE ID=@idTraDao));
+EXEC dbo.__RecalcBillTotal @b4;
+
+-- Bill 5: 2025-11-03 13:10 (staff) - Bàn 7
+DECLARE @b5 INT;
+INSERT INTO Bills(Account, CreatedDate, Discount, TotalAmount)
+VALUES (N'staff', '2025-11-03T13:10:00', 0.00, 0);
+SET @b5 = SCOPE_IDENTITY();
+INSERT INTO BillDetails(BillID, FoodID, Quantity, UnitPrice)
+VALUES
+(@b5, @idBunCha,  1, (SELECT Price FROM Food WHERE ID=@idBunCha)),
+(@b5, @idComGXM,  1, (SELECT Price FROM Food WHERE ID=@idComGXM)),
+(@b5, @idTraiCay, 1, (SELECT Price FROM Food WHERE ID=@idTraiCay));
+EXEC dbo.__RecalcBillTotal @b5;
+
+-- Bill 6: 2025-11-07 20:25 (admin) - Bàn 10 (giảm 15%)
+DECLARE @b6 INT;
+INSERT INTO Bills(Account, CreatedDate, Discount, TotalAmount)
+VALUES (N'admin', '2025-11-07T20:25:00', 0.15, 0);
+SET @b6 = SCOPE_IDENTITY();
+INSERT INTO BillDetails(BillID, FoodID, Quantity, UnitPrice)
+VALUES
+(@b6, @idGaRan,   2, (SELECT Price FROM Food WHERE ID=@idGaRan)),
+(@b6, @idKemVani, 2, (SELECT Price FROM Food WHERE ID=@idKemVani));
+EXEC dbo.__RecalcBillTotal @b6;
+
+-- Bill 7: 2025-11-08 09:00 (staff) - Bàn 4
+DECLARE @b7 INT;
+INSERT INTO Bills(Account, CreatedDate, Discount, TotalAmount)
+VALUES (N'staff', '2025-11-08T09:00:00', 0.00, 0);
+SET @b7 = SCOPE_IDENTITY();
+INSERT INTO BillDetails(BillID, FoodID, Quantity, UnitPrice)
+VALUES
+(@b7, @idCafeDen, 1, (SELECT Price FROM Food WHERE ID=@idCafeDen)),
+(@b7, @idTraDa,   1, (SELECT Price FROM Food WHERE ID=@idTraDa)),
+(@b7, @idFlan,    1, (SELECT Price FROM Food WHERE ID=@idFlan));
+EXEC dbo.__RecalcBillTotal @b7;
+
+-- Bill 8: 2025-11-08 19:45 (admin) - Bàn 8 (giảm 8%)
+DECLARE @b8 INT;
+INSERT INTO Bills(Account, CreatedDate, Discount, TotalAmount)
+VALUES (N'admin', '2025-11-08T19:45:00', 0.08, 0);
+SET @b8 = SCOPE_IDENTITY();
+INSERT INTO BillDetails(BillID, FoodID, Quantity, UnitPrice)
+VALUES
+(@b8, @idPhoBo,   1, (SELECT Price FROM Food WHERE ID=@idPhoBo)),
+(@b8, @idMiXao,   1, (SELECT Price FROM Food WHERE ID=@idMiXao)),
+(@b8, @idTraDao,  2, (SELECT Price FROM Food WHERE ID=@idTraDao));
+EXEC dbo.__RecalcBillTotal @b8;
+
+GO
+
+/* =========================
+   TRUY VẤN KIỂM TRA NHANH
+   ========================= */
+-- Tổng tiền từng bill (subtotal) so với Bills.TotalAmount
+;WITH Sub AS (
+  SELECT BillID, SUM(Quantity*UnitPrice) AS SubTotal
+  FROM BillDetails
+  GROUP BY BillID
+)
+SELECT b.ID, b.Account, b.CreatedDate, b.Discount,
+       s.SubTotal AS CalculatedSubTotal,
+       CAST(s.SubTotal * (1-ISNULL(b.Discount,0)) AS FLOAT) AS ExpectedTotal,
+       b.TotalAmount
+FROM Bills b
+LEFT JOIN Sub s ON s.BillID = b.ID
+ORDER BY b.CreatedDate;
+
+-- Top món bán chạy
+SELECT f.Name, SUM(d.Quantity) AS TotalQty
+FROM BillDetails d
+JOIN Food f ON f.ID = d.FoodID
+GROUP BY f.Name
+ORDER BY TotalQty DESC;
+
+-- Doanh thu theo ngày
+SELECT CONVERT(date, CreatedDate) AS Ngay,
+       SUM(TotalAmount) AS DoanhThu
+FROM Bills
+GROUP BY CONVERT(date, CreatedDate)
+ORDER BY Ngay;

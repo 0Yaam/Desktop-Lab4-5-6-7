@@ -1,0 +1,283 @@
+-- Restaurant_Management: schema + rich seed (spread dates)
+-- Safe re-run: drops then recreates. Target: Microsoft SQL Server
+
+SET NOCOUNT ON;
+
+IF DB_ID(N'Restaurant_Management') IS NULL
+BEGIN
+  PRINT N'Creating database [Restaurant_Management]...';
+  CREATE DATABASE [Restaurant_Management];
+END
+GO
+
+USE [Restaurant_Management];
+GO
+
+/* ==== DROP OLD OBJECTS ==== */
+IF OBJECT_ID(N'dbo.vBillTotals', N'V') IS NOT NULL DROP VIEW dbo.vBillTotals;
+
+IF OBJECT_ID(N'dbo.BillDetails', N'U') IS NOT NULL DROP TABLE dbo.BillDetails;
+IF OBJECT_ID(N'dbo.Bills', N'U') IS NOT NULL DROP TABLE dbo.Bills;
+IF OBJECT_ID(N'dbo.Tables', N'U') IS NOT NULL DROP TABLE dbo.Tables;
+IF OBJECT_ID(N'dbo.AccountRoles', N'U') IS NOT NULL DROP TABLE dbo.AccountRoles;
+IF OBJECT_ID(N'dbo.Roles', N'U') IS NOT NULL DROP TABLE dbo.Roles;
+IF OBJECT_ID(N'dbo.Accounts', N'U') IS NOT NULL DROP TABLE dbo.Accounts;
+IF OBJECT_ID(N'dbo.Food', N'U') IS NOT NULL DROP TABLE dbo.Food;
+IF OBJECT_ID(N'dbo.Category', N'U') IS NOT NULL DROP TABLE dbo.Category;
+GO
+
+/* ==== SCHEMA ==== */
+CREATE TABLE dbo.Category
+(
+  ID INT IDENTITY(1,1) NOT NULL CONSTRAINT PK_Category PRIMARY KEY,
+  Name NVARCHAR(200) NOT NULL,
+  [Type] INT NOT NULL CONSTRAINT CK_Category_Type CHECK ([Type] IN (0,1))
+);
+GO
+
+CREATE TABLE dbo.Food
+(
+  ID INT IDENTITY(1,1) NOT NULL CONSTRAINT PK_Food PRIMARY KEY,
+  Name NVARCHAR(200) NOT NULL,
+  Unit NVARCHAR(50) NULL,
+  FoodCategoryID INT NOT NULL,
+  Price INT NOT NULL CONSTRAINT DF_Food_Price DEFAULT(0),
+  Notes NVARCHAR(4000) NULL,
+  IsDeleted BIT NOT NULL CONSTRAINT DF_Food_IsDeleted DEFAULT(0),
+  CONSTRAINT FK_Food_Category FOREIGN KEY (FoodCategoryID) REFERENCES dbo.Category(ID)
+);
+GO
+
+CREATE TABLE dbo.Tables
+(
+  ID INT IDENTITY(1,1) NOT NULL CONSTRAINT PK_Tables PRIMARY KEY,
+  Name NVARCHAR(100) NOT NULL,
+  IsActive BIT NOT NULL CONSTRAINT DF_Tables_IsActive DEFAULT(1),
+  Notes NVARCHAR(500) NULL
+);
+GO
+
+CREATE TABLE dbo.Accounts
+(
+  ID INT IDENTITY(1,1) NOT NULL CONSTRAINT PK_Accounts PRIMARY KEY,
+  UserName NVARCHAR(100) NOT NULL UNIQUE,
+  DisplayName NVARCHAR(200) NOT NULL,
+  Password NVARCHAR(256) NOT NULL,
+  [Group] NVARCHAR(50) NULL,
+  Email NVARCHAR(100) NULL,
+  Tel NVARCHAR(50) NULL,
+  IsActive BIT NOT NULL CONSTRAINT DF_Accounts_IsActive DEFAULT(1)
+);
+GO
+
+CREATE TABLE dbo.Roles
+(
+  ID INT IDENTITY(1,1) NOT NULL CONSTRAINT PK_Roles PRIMARY KEY,
+  RoleName NVARCHAR(100) NOT NULL UNIQUE,
+  [Description] NVARCHAR(200) NULL
+);
+GO
+
+CREATE TABLE dbo.AccountRoles
+(
+  AccountID INT NOT NULL,
+  RoleID INT NOT NULL,
+  IsActive BIT NOT NULL CONSTRAINT DF_AccountRoles_IsActive DEFAULT(1),
+  CONSTRAINT PK_AccountRoles PRIMARY KEY (AccountID, RoleID),
+  CONSTRAINT FK_AccountRoles_Accounts FOREIGN KEY (AccountID) REFERENCES dbo.Accounts(ID),
+  CONSTRAINT FK_AccountRoles_Roles FOREIGN KEY (RoleID) REFERENCES dbo.Roles(ID)
+);
+GO
+
+CREATE TABLE dbo.Bills
+(
+  ID INT IDENTITY(1,1) NOT NULL CONSTRAINT PK_Bills PRIMARY KEY,
+  TableID INT NOT NULL,
+  CheckIn DATETIME NOT NULL CONSTRAINT DF_Bills_CheckIn DEFAULT(GETDATE()),
+  CheckOut DATETIME NULL,
+  DiscountPercent INT NOT NULL CONSTRAINT DF_Bills_Discount DEFAULT(0),
+  IsPaid BIT NOT NULL CONSTRAINT DF_Bills_IsPaid DEFAULT(0),
+  StaffID INT NULL,
+  Notes NVARCHAR(500) NULL,
+  CONSTRAINT FK_Bills_Tables FOREIGN KEY (TableID) REFERENCES dbo.Tables(ID),
+  CONSTRAINT FK_Bills_Accounts FOREIGN KEY (StaffID) REFERENCES dbo.Accounts(ID)
+);
+GO
+
+CREATE TABLE dbo.BillDetails
+(
+  ID INT IDENTITY(1,1) NOT NULL CONSTRAINT PK_BillDetails PRIMARY KEY,
+  BillID INT NOT NULL,
+  FoodID INT NOT NULL,
+  Quantity INT NOT NULL CONSTRAINT DF_BillDetails_Quantity DEFAULT(1),
+  UnitPrice INT NOT NULL,
+  Notes NVARCHAR(500) NULL,
+  CONSTRAINT FK_BillDetails_Bills FOREIGN KEY (BillID) REFERENCES dbo.Bills(ID) ON DELETE CASCADE,
+  CONSTRAINT FK_BillDetails_Food FOREIGN KEY (FoodID) REFERENCES dbo.Food(ID)
+);
+GO
+
+/* ==== SEED MASTER DATA ==== */
+INSERT INTO dbo.Category (Name, [Type]) VALUES
+(N'Thức uống',0),
+(N'Đồ ăn',1),
+(N'Khai vị',1),
+(N'Tráng miệng',1);
+
+DECLARE @DrinkId INT = (SELECT ID FROM dbo.Category WHERE Name = N'Thức uống');
+DECLARE @FoodId  INT = (SELECT ID FROM dbo.Category WHERE Name = N'Đồ ăn');
+DECLARE @AppetId INT = (SELECT ID FROM dbo.Category WHERE Name = N'Khai vị');
+DECLARE @DessId  INT = (SELECT ID FROM dbo.Category WHERE Name = N'Tráng miệng');
+
+-- FIX: thêm cột IsDeleted cho đúng số cột
+INSERT INTO dbo.Food (Name, Unit, FoodCategoryID, Price, Notes, IsDeleted) VALUES
+(N'Cà phê đá', N'Ly',     @DrinkId, 20000, N'', 0),
+(N'Trà đào',   N'Ly',     @DrinkId, 30000, N'', 0),
+(N'Sinh tố bơ',N'Ly',     @DrinkId, 35000, N'', 0),
+(N'Cơm gà',    N'Phần',   @FoodId,  45000, N'', 0),
+(N'Bún bò',    N'Tô',     @FoodId,  40000, N'', 0),
+(N'Phở bò',    N'Tô',     @FoodId,  42000, N'', 0),
+(N'Gỏi cuốn',  N'Phần',   @AppetId, 25000, N'', 0),
+(N'Khoai tây chiên',N'Đĩa',@AppetId,22000, N'', 0),
+(N'Bánh flan', N'Phần',   @DessId,  15000, N'', 0),
+(N'Chè khúc bạch',N'Chén',@DessId,  18000, N'', 0);
+
+INSERT INTO dbo.Tables (Name, Notes) VALUES
+(N'Bàn1', N'Gần cửa sổ'),
+(N'Bàn2', N'Gần quầy'),
+(N'Bàn3', N'Sân vườn'),
+(N'Bàn4', N'Tầng 2'),
+(N'Bàn5', N'Phòng VIP');
+
+INSERT INTO dbo.Accounts (UserName, DisplayName, Password, [Group], Email, Tel) VALUES
+(N'admin',  N'Quản trị', N'123456', N'Admin', N'admin@example.com',  N'0900000001'),
+(N'staff1', N'Nhân viên 1', N'123456', N'Staff', N'staff1@example.com', N'0900000002'),
+(N'staff2', N'Nhân viên 2', N'123456', N'Staff', N'staff2@example.com', N'0900000003');
+
+INSERT INTO dbo.Roles (RoleName, [Description]) VALUES
+(N'ManageTables',  N'Quản lý bàn'),
+(N'ManageBills',   N'Quản lý hóa đơn'),
+(N'ManageFoods',   N'Quản lý món ăn'),
+(N'ManageAccounts',N'Quản lý tài khoản');
+
+-- admin full quyền
+INSERT INTO dbo.AccountRoles (AccountID, RoleID)
+SELECT a.ID, r.ID
+FROM dbo.Accounts a
+JOIN dbo.Roles r ON 1=1
+WHERE a.UserName = N'admin';
+
+-- staff1, staff2: hóa đơn + món ăn
+INSERT INTO dbo.AccountRoles (AccountID, RoleID)
+SELECT a.ID, r.ID
+FROM dbo.Accounts a
+JOIN dbo.Roles r ON r.RoleName IN (N'ManageBills', N'ManageFoods')
+WHERE a.UserName IN (N'staff1', N'staff2');
+
+/* ==== SEED BILLS (spread over many dates) ==== */
+
+DECLARE @AdminID INT  = (SELECT ID FROM dbo.Accounts WHERE UserName=N'admin');
+DECLARE @S1ID    INT  = (SELECT ID FROM dbo.Accounts WHERE UserName=N'staff1');
+DECLARE @S2ID    INT  = (SELECT ID FROM dbo.Accounts WHERE UserName=N'staff2');
+
+-- Map tên bàn → ID (đơn giản hóa khi seed)
+;WITH T AS (
+  SELECT Name, ID FROM dbo.Tables
+)
+-- Khai báo các bản ghi hóa đơn cần chèn (rải rác ngày)
+-- DaysAgo: số ngày trước hôm nay, HStart: giờ bắt đầu, DurH: số giờ ngồi, Paid: 1/0
+-- Discount: %
+,Seed AS (
+  SELECT * FROM (VALUES
+   (N'Bàn1', @AdminID,  0,  8, 1, 10, N'Sáng nay'),
+   (N'Bàn2', @S1ID,     0, 12, 2,  0, N'Trưa nay'),
+   (N'Bàn3', @S1ID,     0, 19, 3,  0, N'Đang dùng'),
+   (N'Bàn4', @S2ID,     1, 10, 1,  5, N'Hôm qua'),
+   (N'Bàn2', @AdminID,  2, 18, 2, 15, N'Giờ cao điểm'),
+   (N'Bàn5', @S2ID,     3,  9, 1,  0, N'Khách sớm'),
+   (N'Bàn1', @AdminID,  5, 20, 2, 10, N'Khuyến mãi'),
+   (N'Bàn3', @S1ID,     7, 11, 1,  0, N'Ngày thường'),
+   (N'Bàn4', @S2ID,    10, 19, 2,  0, N'Cuối tuần'),
+   (N'Bàn2', @S1ID,    12, 12, 1,  0, N'Giữa tuần'),
+   (N'Bàn5', @AdminID, 14, 18, 2, 20, N'Sinh nhật'),
+   (N'Bàn1', @S2ID,    15,  7, 1,  0, N'Cà phê sáng'),
+   (N'Bàn3', @S1ID,    20, 13, 2,  5, N'Bữa trưa'),
+   (N'Bàn4', @AdminID, 25, 19, 3,  0, N'Gia đình'),
+   (N'Bàn2', @S2ID,    30, 11, 1,  0, N'Bạn bè'),
+   (N'Bàn5', @S1ID,    35, 17, 2, 10, N'Giảm giá'),
+   (N'Bàn1', @AdminID, 40,  9, 1,  0, N'Khách quen'),
+   (N'Bàn3', @S1ID,    45, 20, 2,  0, N'Cuối ngày'),
+   (N'Bàn4', @S2ID,    50, 12, 1, 15, N'Sự kiện'),
+   (N'Bàn2', @AdminID, 60, 18, 2,  0, N'Khá đông')
+  ) AS s(TableName, StaffID, DaysAgo, HStart, DurH, Discount, Notes)
+)
+,Resolved AS (
+  SELECT
+    t.ID        AS TableID,
+    s.StaffID,
+    s.DaysAgo,
+    s.HStart,
+    s.DurH,
+    s.Discount,
+    s.Notes
+  FROM Seed s
+  JOIN T ON T.Name = s.TableName
+)
+-- Lưu ID bill mới chèn để thêm chi tiết
+DECLARE @NewBills TABLE (ID INT PRIMARY KEY);
+
+INSERT INTO dbo.Bills (TableID, CheckIn, CheckOut, DiscountPercent, IsPaid, StaffID, Notes)
+OUTPUT inserted.ID INTO @NewBills(ID)
+SELECT
+  r.TableID,
+  -- CheckIn: ngày hiện tại trừ DaysAgo, cộng giờ HStart
+  DATEADD(HOUR, r.HStart, CAST(DATEADD(DAY, -r.DaysAgo, GETDATE()) AS DATE)),
+  -- CheckOut: nếu DurH>0 thì CheckIn + DurH giờ, một số hóa đơn gần nhất để open (IsPaid=0) sẽ để NULL
+  CASE
+    WHEN r.DaysAgo=0 AND r.HStart>=19 THEN NULL
+    ELSE DATEADD(HOUR, r.DurH,
+         DATEADD(HOUR, r.HStart, CAST(DATEADD(DAY, -r.DaysAgo, GETDATE()) AS DATE)))
+  END AS CheckOut,
+  r.Discount,
+  CASE WHEN r.DaysAgo=0 AND r.HStart>=19 THEN 0 ELSE 1 END AS IsPaid,
+  r.StaffID,
+  r.Notes
+FROM Resolved r;
+
+-- Thêm BillDetails: mỗi bill 3 món ngẫu nhiên, số lượng 1..3
+INSERT INTO dbo.BillDetails (BillID, FoodID, Quantity, UnitPrice)
+SELECT b.ID, f.ID,
+       1 + ABS(CHECKSUM(NEWID())) % 3,
+       f.Price
+FROM @NewBills b
+CROSS APPLY (
+   SELECT TOP (3) ID, Price
+   FROM dbo.Food
+   WHERE IsDeleted = 0
+   ORDER BY NEWID()
+) f;
+
+/* ==== VIEW TỔNG TIỀN HÓA ĐƠN ==== */
+CREATE VIEW dbo.vBillTotals AS
+SELECT
+  b.ID           AS BillID,
+  b.TableID,
+  b.CheckIn,
+  b.CheckOut,
+  b.DiscountPercent,
+  b.IsPaid,
+  SUM(d.Quantity * d.UnitPrice)                             AS Subtotal,
+  CAST(ROUND(SUM(d.Quantity * d.UnitPrice) * (100.0 - b.DiscountPercent) / 100.0, 0) AS INT) AS TotalAfterDiscount
+FROM dbo.Bills b
+JOIN dbo.BillDetails d ON d.BillID = b.ID
+GROUP BY b.ID, b.TableID, b.CheckIn, b.CheckOut, b.DiscountPercent, b.IsPaid;
+GO
+
+PRINT N'Restaurant_Management is ready with rich seeded data.';
+
+-- QUICK CHECKS
+SELECT TOP 10 * FROM dbo.Food ORDER BY ID;
+SELECT TOP 10 * FROM dbo.Tables ORDER BY ID;
+SELECT TOP 20 * FROM dbo.Bills ORDER BY CheckIn DESC, ID DESC;
+SELECT TOP 60 * FROM dbo.BillDetails ORDER BY ID DESC;
+SELECT TOP 20 * FROM dbo.vBillTotals ORDER BY CheckIn DESC, BillID DESC;

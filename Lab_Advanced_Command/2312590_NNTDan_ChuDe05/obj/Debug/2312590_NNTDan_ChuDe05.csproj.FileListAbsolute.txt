@@ -1,0 +1,10 @@
+C:\Users\TruongDan\Documents\Works\Desktop\Lab_Advanced_Command\2312590_NNTDan_ChuDe05\bin\Debug\2312590_NNTDan_ChuDe05.exe.config
+C:\Users\TruongDan\Documents\Works\Desktop\Lab_Advanced_Command\2312590_NNTDan_ChuDe05\bin\Debug\2312590_NNTDan_ChuDe05.exe
+C:\Users\TruongDan\Documents\Works\Desktop\Lab_Advanced_Command\2312590_NNTDan_ChuDe05\bin\Debug\2312590_NNTDan_ChuDe05.pdb
+C:\Users\TruongDan\Documents\Works\Desktop\Lab_Advanced_Command\2312590_NNTDan_ChuDe05\obj\Debug\2312590_NNTDan_ChuDe05.csproj.AssemblyReference.cache
+C:\Users\TruongDan\Documents\Works\Desktop\Lab_Advanced_Command\2312590_NNTDan_ChuDe05\obj\Debug\_2312590_NNTDan_ChuDe05.FoodForm_Load.resources
+C:\Users\TruongDan\Documents\Works\Desktop\Lab_Advanced_Command\2312590_NNTDan_ChuDe05\obj\Debug\_2312590_NNTDan_ChuDe05.Properties.Resources.resources
+C:\Users\TruongDan\Documents\Works\Desktop\Lab_Advanced_Command\2312590_NNTDan_ChuDe05\obj\Debug\2312590_NNTDan_ChuDe05.csproj.GenerateResource.cache
+C:\Users\TruongDan\Documents\Works\Desktop\Lab_Advanced_Command\2312590_NNTDan_ChuDe05\obj\Debug\2312590_NNTDan_ChuDe05.csproj.CoreCompileInputs.cache
+C:\Users\TruongDan\Documents\Works\Desktop\Lab_Advanced_Command\2312590_NNTDan_ChuDe05\obj\Debug\2312590_NNTDan_ChuDe05.exe
+C:\Users\TruongDan\Documents\Works\Desktop\Lab_Advanced_Command\2312590_NNTDan_ChuDe05\obj\Debug\2312590_NNTDan_ChuDe05.pdb

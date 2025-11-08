@@ -1,0 +1,169 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\TruongDan\\Downloads\\2312590_NNTDan_Lab07\\2312590_NNTDan_Lab07\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6D79400F-596A-404C-A33D-77FC3C9A3330}|2312590_NNTDan_Lab07\\2312590_NNTDan_Lab07.csproj|c:\\users\\truongdan\\downloads\\2312590_nntdan_lab07\\2312590_nntdan_lab07\\2312590_nntdan_lab07\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D79400F-596A-404C-A33D-77FC3C9A3330}|2312590_NNTDan_Lab07\\2312590_NNTDan_Lab07.csproj|solutionrelative:2312590_nntdan_lab07\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D79400F-596A-404C-A33D-77FC3C9A3330}|2312590_NNTDan_Lab07\\2312590_NNTDan_Lab07.csproj|c:\\users\\truongdan\\downloads\\2312590_nntdan_lab07\\2312590_nntdan_lab07\\2312590_nntdan_lab07\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6D79400F-596A-404C-A33D-77FC3C9A3330}|2312590_NNTDan_Lab07\\2312590_NNTDan_Lab07.csproj|solutionrelative:2312590_nntdan_lab07\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D79400F-596A-404C-A33D-77FC3C9A3330}|2312590_NNTDan_Lab07\\2312590_NNTDan_Lab07.csproj|c:\\users\\truongdan\\downloads\\2312590_nntdan_lab07\\2312590_nntdan_lab07\\2312590_nntdan_lab07\\roleform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6D79400F-596A-404C-A33D-77FC3C9A3330}|2312590_NNTDan_Lab07\\2312590_NNTDan_Lab07.csproj|solutionrelative:2312590_nntdan_lab07\\roleform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D79400F-596A-404C-A33D-77FC3C9A3330}|2312590_NNTDan_Lab07\\2312590_NNTDan_Lab07.csproj|c:\\users\\truongdan\\downloads\\2312590_nntdan_lab07\\2312590_nntdan_lab07\\2312590_nntdan_lab07\\tablebillsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6D79400F-596A-404C-A33D-77FC3C9A3330}|2312590_NNTDan_Lab07\\2312590_NNTDan_Lab07.csproj|solutionrelative:2312590_nntdan_lab07\\tablebillsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D79400F-596A-404C-A33D-77FC3C9A3330}|2312590_NNTDan_Lab07\\2312590_NNTDan_Lab07.csproj|c:\\users\\truongdan\\downloads\\2312590_nntdan_lab07\\2312590_nntdan_lab07\\2312590_nntdan_lab07\\tableform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6D79400F-596A-404C-A33D-77FC3C9A3330}|2312590_NNTDan_Lab07\\2312590_NNTDan_Lab07.csproj|solutionrelative:2312590_nntdan_lab07\\tableform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D79400F-596A-404C-A33D-77FC3C9A3330}|2312590_NNTDan_Lab07\\2312590_NNTDan_Lab07.csproj|c:\\users\\truongdan\\downloads\\2312590_nntdan_lab07\\2312590_nntdan_lab07\\2312590_nntdan_lab07\\tablesaleslogform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6D79400F-596A-404C-A33D-77FC3C9A3330}|2312590_NNTDan_Lab07\\2312590_NNTDan_Lab07.csproj|solutionrelative:2312590_nntdan_lab07\\tablesaleslogform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D79400F-596A-404C-A33D-77FC3C9A3330}|2312590_NNTDan_Lab07\\2312590_NNTDan_Lab07.csproj|c:\\users\\truongdan\\downloads\\2312590_nntdan_lab07\\2312590_nntdan_lab07\\2312590_nntdan_lab07\\updateaccountform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6D79400F-596A-404C-A33D-77FC3C9A3330}|2312590_NNTDan_Lab07\\2312590_NNTDan_Lab07.csproj|solutionrelative:2312590_nntdan_lab07\\updateaccountform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D79400F-596A-404C-A33D-77FC3C9A3330}|2312590_NNTDan_Lab07\\2312590_NNTDan_Lab07.csproj|c:\\users\\truongdan\\downloads\\2312590_nntdan_lab07\\2312590_nntdan_lab07\\2312590_nntdan_lab07\\updatecategoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6D79400F-596A-404C-A33D-77FC3C9A3330}|2312590_NNTDan_Lab07\\2312590_NNTDan_Lab07.csproj|solutionrelative:2312590_nntdan_lab07\\updatecategoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D79400F-596A-404C-A33D-77FC3C9A3330}|2312590_NNTDan_Lab07\\2312590_NNTDan_Lab07.csproj|c:\\users\\truongdan\\downloads\\2312590_nntdan_lab07\\2312590_nntdan_lab07\\2312590_nntdan_lab07\\updatefoodform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6D79400F-596A-404C-A33D-77FC3C9A3330}|2312590_NNTDan_Lab07\\2312590_NNTDan_Lab07.csproj|solutionrelative:2312590_nntdan_lab07\\updatefoodform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\TruongDan\\Downloads\\2312590_NNTDan_Lab07\\2312590_NNTDan_Lab07\\2312590_NNTDan_Lab07\\MainForm.cs",
+              "RelativeDocumentMoniker": "2312590_NNTDan_Lab07\\MainForm.cs",
+              "ToolTip": "C:\\Users\\TruongDan\\Downloads\\2312590_NNTDan_Lab07\\2312590_NNTDan_Lab07\\2312590_NNTDan_Lab07\\MainForm.cs",
+              "RelativeToolTip": "2312590_NNTDan_Lab07\\MainForm.cs",
+              "ViewState": "AgIAAAQCAAAAAAAAAAAhwDUDAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T04:40:06.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\TruongDan\\Downloads\\2312590_NNTDan_Lab07\\2312590_NNTDan_Lab07\\2312590_NNTDan_Lab07\\MainForm.cs",
+              "RelativeDocumentMoniker": "2312590_NNTDan_Lab07\\MainForm.cs",
+              "ToolTip": "C:\\Users\\TruongDan\\Downloads\\2312590_NNTDan_Lab07\\2312590_NNTDan_Lab07\\2312590_NNTDan_Lab07\\MainForm.cs [Design]",
+              "RelativeToolTip": "2312590_NNTDan_Lab07\\MainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T04:40:04.893Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RoleForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\TruongDan\\Downloads\\2312590_NNTDan_Lab07\\2312590_NNTDan_Lab07\\2312590_NNTDan_Lab07\\RoleForm.cs",
+              "RelativeDocumentMoniker": "2312590_NNTDan_Lab07\\RoleForm.cs",
+              "ToolTip": "C:\\Users\\TruongDan\\Downloads\\2312590_NNTDan_Lab07\\2312590_NNTDan_Lab07\\2312590_NNTDan_Lab07\\RoleForm.cs [Design]",
+              "RelativeToolTip": "2312590_NNTDan_Lab07\\RoleForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T04:39:57.623Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TableBillsForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\TruongDan\\Downloads\\2312590_NNTDan_Lab07\\2312590_NNTDan_Lab07\\2312590_NNTDan_Lab07\\TableBillsForm.cs",
+              "RelativeDocumentMoniker": "2312590_NNTDan_Lab07\\TableBillsForm.cs",
+              "ToolTip": "C:\\Users\\TruongDan\\Downloads\\2312590_NNTDan_Lab07\\2312590_NNTDan_Lab07\\2312590_NNTDan_Lab07\\TableBillsForm.cs [Design]",
+              "RelativeToolTip": "2312590_NNTDan_Lab07\\TableBillsForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T04:39:55.204Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TableForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\TruongDan\\Downloads\\2312590_NNTDan_Lab07\\2312590_NNTDan_Lab07\\2312590_NNTDan_Lab07\\TableForm.cs",
+              "RelativeDocumentMoniker": "2312590_NNTDan_Lab07\\TableForm.cs",
+              "ToolTip": "C:\\Users\\TruongDan\\Downloads\\2312590_NNTDan_Lab07\\2312590_NNTDan_Lab07\\2312590_NNTDan_Lab07\\TableForm.cs [Design]",
+              "RelativeToolTip": "2312590_NNTDan_Lab07\\TableForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T04:39:51.71Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TableSalesLogForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\TruongDan\\Downloads\\2312590_NNTDan_Lab07\\2312590_NNTDan_Lab07\\2312590_NNTDan_Lab07\\TableSalesLogForm.cs",
+              "RelativeDocumentMoniker": "2312590_NNTDan_Lab07\\TableSalesLogForm.cs",
+              "ToolTip": "C:\\Users\\TruongDan\\Downloads\\2312590_NNTDan_Lab07\\2312590_NNTDan_Lab07\\2312590_NNTDan_Lab07\\TableSalesLogForm.cs [Design]",
+              "RelativeToolTip": "2312590_NNTDan_Lab07\\TableSalesLogForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T04:39:50.894Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UpdateAccountForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\TruongDan\\Downloads\\2312590_NNTDan_Lab07\\2312590_NNTDan_Lab07\\2312590_NNTDan_Lab07\\UpdateAccountForm.cs",
+              "RelativeDocumentMoniker": "2312590_NNTDan_Lab07\\UpdateAccountForm.cs",
+              "ToolTip": "C:\\Users\\TruongDan\\Downloads\\2312590_NNTDan_Lab07\\2312590_NNTDan_Lab07\\2312590_NNTDan_Lab07\\UpdateAccountForm.cs [Design]",
+              "RelativeToolTip": "2312590_NNTDan_Lab07\\UpdateAccountForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T04:39:49.94Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UpdateCategoryForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\TruongDan\\Downloads\\2312590_NNTDan_Lab07\\2312590_NNTDan_Lab07\\2312590_NNTDan_Lab07\\UpdateCategoryForm.cs",
+              "RelativeDocumentMoniker": "2312590_NNTDan_Lab07\\UpdateCategoryForm.cs",
+              "ToolTip": "C:\\Users\\TruongDan\\Downloads\\2312590_NNTDan_Lab07\\2312590_NNTDan_Lab07\\2312590_NNTDan_Lab07\\UpdateCategoryForm.cs [Design]",
+              "RelativeToolTip": "2312590_NNTDan_Lab07\\UpdateCategoryForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T04:39:47.351Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UpdateFoodForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\TruongDan\\Downloads\\2312590_NNTDan_Lab07\\2312590_NNTDan_Lab07\\2312590_NNTDan_Lab07\\UpdateFoodForm.cs",
+              "RelativeDocumentMoniker": "2312590_NNTDan_Lab07\\UpdateFoodForm.cs",
+              "ToolTip": "C:\\Users\\TruongDan\\Downloads\\2312590_NNTDan_Lab07\\2312590_NNTDan_Lab07\\2312590_NNTDan_Lab07\\UpdateFoodForm.cs [Design]",
+              "RelativeToolTip": "2312590_NNTDan_Lab07\\UpdateFoodForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T04:39:45.706Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

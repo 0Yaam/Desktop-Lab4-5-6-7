@@ -1,0 +1,57 @@
+D:\visual\Lab_Basic_Command\Lab_Basic_Command\bin\Debug\Lab_Basic_Command.exe.config
+D:\visual\Lab_Basic_Command\Lab_Basic_Command\bin\Debug\Lab_Basic_Command.exe
+D:\visual\Lab_Basic_Command\Lab_Basic_Command\bin\Debug\Lab_Basic_Command.pdb
+D:\visual\Lab_Basic_Command\Lab_Basic_Command\obj\Debug\Lab_Basic_Command.csproj.AssemblyReference.cache
+D:\visual\Lab_Basic_Command\Lab_Basic_Command\obj\Debug\Lab_Basic_Command.AccountManager.resources
+D:\visual\Lab_Basic_Command\Lab_Basic_Command\obj\Debug\Lab_Basic_Command.BillDetailsForm.resources
+D:\visual\Lab_Basic_Command\Lab_Basic_Command\obj\Debug\Lab_Basic_Command.BillLogForm.resources
+D:\visual\Lab_Basic_Command\Lab_Basic_Command\obj\Debug\Lab_Basic_Command.BillsForm.resources
+D:\visual\Lab_Basic_Command\Lab_Basic_Command\obj\Debug\Lab_Basic_Command.CategoryForm.resources
+D:\visual\Lab_Basic_Command\Lab_Basic_Command\obj\Debug\Lab_Basic_Command.FoodForm.resources
+D:\visual\Lab_Basic_Command\Lab_Basic_Command\obj\Debug\Lab_Basic_Command.LoginForm.resources
+D:\visual\Lab_Basic_Command\Lab_Basic_Command\obj\Debug\Lab_Basic_Command.MainForm.resources
+D:\visual\Lab_Basic_Command\Lab_Basic_Command\obj\Debug\Lab_Basic_Command.Properties.Resources.resources
+D:\visual\Lab_Basic_Command\Lab_Basic_Command\obj\Debug\Lab_Basic_Command.RoleListForm.resources
+D:\visual\Lab_Basic_Command\Lab_Basic_Command\obj\Debug\Lab_Basic_Command.csproj.GenerateResource.cache
+D:\visual\Lab_Basic_Command\Lab_Basic_Command\obj\Debug\Lab_Basic_Command.csproj.CoreCompileInputs.cache
+D:\visual\Lab_Basic_Command\Lab_Basic_Command\obj\Debug\Lab_Basic_Command.exe
+D:\visual\Lab_Basic_Command\Lab_Basic_Command\obj\Debug\Lab_Basic_Command.pdb
+D:\DLU\Hoc Ky 5\Phat Trien Ung Dung desktop\Lab4-8\New folder\Lab_Basic_Command\Lab_Basic_Command\bin\Debug\Lab_Basic_Command.exe.config
+D:\DLU\Hoc Ky 5\Phat Trien Ung Dung desktop\Lab4-8\New folder\Lab_Basic_Command\Lab_Basic_Command\bin\Debug\Lab_Basic_Command.exe
+D:\DLU\Hoc Ky 5\Phat Trien Ung Dung desktop\Lab4-8\New folder\Lab_Basic_Command\Lab_Basic_Command\bin\Debug\Lab_Basic_Command.pdb
+D:\DLU\Hoc Ky 5\Phat Trien Ung Dung desktop\Lab4-8\New folder\Lab_Basic_Command\Lab_Basic_Command\obj\Debug\Lab_Basic_Command.csproj.AssemblyReference.cache
+D:\DLU\Hoc Ky 5\Phat Trien Ung Dung desktop\Lab4-8\New folder\Lab_Basic_Command\Lab_Basic_Command\obj\Debug\Lab_Basic_Command.AccountManager.resources
+D:\DLU\Hoc Ky 5\Phat Trien Ung Dung desktop\Lab4-8\New folder\Lab_Basic_Command\Lab_Basic_Command\obj\Debug\Lab_Basic_Command.BillDetailsForm.resources
+D:\DLU\Hoc Ky 5\Phat Trien Ung Dung desktop\Lab4-8\New folder\Lab_Basic_Command\Lab_Basic_Command\obj\Debug\Lab_Basic_Command.BillLogForm.resources
+D:\DLU\Hoc Ky 5\Phat Trien Ung Dung desktop\Lab4-8\New folder\Lab_Basic_Command\Lab_Basic_Command\obj\Debug\Lab_Basic_Command.BillsForm.resources
+D:\DLU\Hoc Ky 5\Phat Trien Ung Dung desktop\Lab4-8\New folder\Lab_Basic_Command\Lab_Basic_Command\obj\Debug\Lab_Basic_Command.CategoryForm.resources
+D:\DLU\Hoc Ky 5\Phat Trien Ung Dung desktop\Lab4-8\New folder\Lab_Basic_Command\Lab_Basic_Command\obj\Debug\Lab_Basic_Command.FoodForm.resources
+D:\DLU\Hoc Ky 5\Phat Trien Ung Dung desktop\Lab4-8\New folder\Lab_Basic_Command\Lab_Basic_Command\obj\Debug\Lab_Basic_Command.LoginForm.resources
+D:\DLU\Hoc Ky 5\Phat Trien Ung Dung desktop\Lab4-8\New folder\Lab_Basic_Command\Lab_Basic_Command\obj\Debug\Lab_Basic_Command.MainForm.resources
+D:\DLU\Hoc Ky 5\Phat Trien Ung Dung desktop\Lab4-8\New folder\Lab_Basic_Command\Lab_Basic_Command\obj\Debug\Lab_Basic_Command.Properties.Resources.resources
+D:\DLU\Hoc Ky 5\Phat Trien Ung Dung desktop\Lab4-8\New folder\Lab_Basic_Command\Lab_Basic_Command\obj\Debug\Lab_Basic_Command.RoleListForm.resources
+D:\DLU\Hoc Ky 5\Phat Trien Ung Dung desktop\Lab4-8\New folder\Lab_Basic_Command\Lab_Basic_Command\obj\Debug\Lab_Basic_Command.csproj.GenerateResource.cache
+D:\DLU\Hoc Ky 5\Phat Trien Ung Dung desktop\Lab4-8\New folder\Lab_Basic_Command\Lab_Basic_Command\obj\Debug\Lab_Basic_Command.csproj.CoreCompileInputs.cache
+D:\DLU\Hoc Ky 5\Phat Trien Ung Dung desktop\Lab4-8\New folder\Lab_Basic_Command\Lab_Basic_Command\obj\Debug\Lab_Basic_Command.exe
+D:\DLU\Hoc Ky 5\Phat Trien Ung Dung desktop\Lab4-8\New folder\Lab_Basic_Command\Lab_Basic_Command\obj\Debug\Lab_Basic_Command.pdb
+C:\Users\TruongDan\Downloads\Lab_Basic_Command\Lab_Basic_Command\Lab_Basic_Command\bin\Debug\Lab4DB.mdf
+C:\Users\TruongDan\Downloads\Lab_Basic_Command\Lab_Basic_Command\Lab_Basic_Command\bin\Debug\Lab4DB_log.ldf
+C:\Users\TruongDan\Downloads\Lab_Basic_Command\Lab_Basic_Command\Lab_Basic_Command\bin\Debug\Lab_Basic_Command.exe.config
+C:\Users\TruongDan\Downloads\Lab_Basic_Command\Lab_Basic_Command\Lab_Basic_Command\bin\Debug\Lab_Basic_Command.exe
+C:\Users\TruongDan\Downloads\Lab_Basic_Command\Lab_Basic_Command\Lab_Basic_Command\bin\Debug\Lab_Basic_Command.pdb
+C:\Users\TruongDan\Downloads\Lab_Basic_Command\Lab_Basic_Command\Lab_Basic_Command\obj\Debug\Lab_Basic_Command.csproj.AssemblyReference.cache
+C:\Users\TruongDan\Downloads\Lab_Basic_Command\Lab_Basic_Command\Lab_Basic_Command\obj\Debug\Lab_Basic_Command.exe.config
+C:\Users\TruongDan\Downloads\Lab_Basic_Command\Lab_Basic_Command\Lab_Basic_Command\obj\Debug\Lab_Basic_Command.AccountManager.resources
+C:\Users\TruongDan\Downloads\Lab_Basic_Command\Lab_Basic_Command\Lab_Basic_Command\obj\Debug\Lab_Basic_Command.BillDetailsForm.resources
+C:\Users\TruongDan\Downloads\Lab_Basic_Command\Lab_Basic_Command\Lab_Basic_Command\obj\Debug\Lab_Basic_Command.BillLogForm.resources
+C:\Users\TruongDan\Downloads\Lab_Basic_Command\Lab_Basic_Command\Lab_Basic_Command\obj\Debug\Lab_Basic_Command.BillsForm.resources
+C:\Users\TruongDan\Downloads\Lab_Basic_Command\Lab_Basic_Command\Lab_Basic_Command\obj\Debug\Lab_Basic_Command.CategoryForm.resources
+C:\Users\TruongDan\Downloads\Lab_Basic_Command\Lab_Basic_Command\Lab_Basic_Command\obj\Debug\Lab_Basic_Command.FoodForm.resources
+C:\Users\TruongDan\Downloads\Lab_Basic_Command\Lab_Basic_Command\Lab_Basic_Command\obj\Debug\Lab_Basic_Command.LoginForm.resources
+C:\Users\TruongDan\Downloads\Lab_Basic_Command\Lab_Basic_Command\Lab_Basic_Command\obj\Debug\Lab_Basic_Command.MainForm.resources
+C:\Users\TruongDan\Downloads\Lab_Basic_Command\Lab_Basic_Command\Lab_Basic_Command\obj\Debug\Lab_Basic_Command.Properties.Resources.resources
+C:\Users\TruongDan\Downloads\Lab_Basic_Command\Lab_Basic_Command\Lab_Basic_Command\obj\Debug\Lab_Basic_Command.RoleListForm.resources
+C:\Users\TruongDan\Downloads\Lab_Basic_Command\Lab_Basic_Command\Lab_Basic_Command\obj\Debug\Lab_Basic_Command.csproj.GenerateResource.cache
+C:\Users\TruongDan\Downloads\Lab_Basic_Command\Lab_Basic_Command\Lab_Basic_Command\obj\Debug\Lab_Basic_Command.csproj.CoreCompileInputs.cache
+C:\Users\TruongDan\Downloads\Lab_Basic_Command\Lab_Basic_Command\Lab_Basic_Command\obj\Debug\Lab_Basic_Command.exe
+C:\Users\TruongDan\Downloads\Lab_Basic_Command\Lab_Basic_Command\Lab_Basic_Command\obj\Debug\Lab_Basic_Command.pdb
