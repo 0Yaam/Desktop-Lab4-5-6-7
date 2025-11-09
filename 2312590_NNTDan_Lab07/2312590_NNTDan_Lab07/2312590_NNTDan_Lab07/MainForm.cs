@@ -23,7 +23,6 @@ namespace _2312590_NNTDan_Lab07
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            // Show admin menu only for admins
             if (AppSession.CurrentUser == null)
             {
                 if (tsmiQuanTri != null)
@@ -63,7 +62,6 @@ namespace _2312590_NNTDan_Lab07
 
         private void accountInfoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            // Open current user's account info; if no session, open login
             if (AppSession.CurrentUser == null)
             {
                 using (var login = new LoginForm())
@@ -77,7 +75,6 @@ namespace _2312590_NNTDan_Lab07
             if (user == null)
                 return;
 
-            // For simplicity, open editable form. You can add read-only mode later for staff.
             using (var dlg = new UpdateAccountForm(user.Id))
             {
                 dlg.ShowDialog(this);
@@ -255,7 +252,6 @@ namespace _2312590_NNTDan_Lab07
 
             var selectedItem = lvwFood.SelectedItems[0];
 
-            // Use Tag (you set Tag = food.Id when populating) — fallback to parsing the text column
             int selectedFoodId;
             if (selectedItem.Tag is int idFromTag)
                 selectedFoodId = idFromTag;
@@ -398,7 +394,6 @@ namespace _2312590_NNTDan_Lab07
             var btn = sender as Button;
             _selectedTableId = (int)btn.Tag;
 
-            // cố lấy bill hiện có, nếu không có => chỉ set currentBillId = null
             using (var db = new RestaurantContext())
             {
                 var bill = db.Bills
@@ -459,8 +454,6 @@ namespace _2312590_NNTDan_Lab07
         }
 
 
-        // Add a food to the current bill (re-using UpdateFoodForm selection or a simple input)
-        // Thay nội dung cũ bằng:
         private void AddFoodToBill(int foodId, int quantity)
         {
             if (_currentBillId == null)
@@ -513,23 +506,17 @@ namespace _2312590_NNTDan_Lab07
                     if (bill == null)
                         return;
 
-                    // mark paid
                     bill.IsPaid = true;
                     bill.CheckOut = DateTime.Now;
 
-                    // Remove bill details so the table becomes empty in DB and the Food rows are not referenced.
-                    // If you need to keep sales history, do NOT remove details — instead implement a snapshot or allow cascade delete.
                     var details = db.BillDetails.Where(d => d.BillId == bill.Id).ToList();
                     if (details.Any())
                         db.BillDetails.RemoveRange(details);
 
-                    // Optionally remove the bill as well (uncomment if you don't need paid-bill records):
-                    // db.Bills.Remove(bill);
 
                     db.SaveChanges();
                 }
 
-                // Clear current bill in UI and refresh
                 _currentBillId = null;
                 LoadTableButtons();
                 LoadBillItems();
@@ -585,7 +572,6 @@ namespace _2312590_NNTDan_Lab07
             }
         }
 
-        // Local InputBox helper (no external references required)
         private string InputBox(string title, string prompt, string defaultValue)
         {
             using (var form = new Form())
@@ -670,7 +656,6 @@ namespace _2312590_NNTDan_Lab07
                 return;
             }
 
-            // nếu chưa có bill thì tạo luôn
             if (_currentBillId == null)
             {
                 using (var db = new RestaurantContext())
@@ -689,7 +674,6 @@ namespace _2312590_NNTDan_Lab07
                 }
             }
 
-            // lấy list món đã tick
             var ids = lvwFood.Items
                 .Cast<ListViewItem>()
                 .Where(x => x.Checked)
@@ -729,7 +713,7 @@ namespace _2312590_NNTDan_Lab07
                     .DefaultIfEmpty(0)
                     .Sum();
 
-                lblTongTien.Text = total.ToString("N0"); // ví dụ: 12,000
+                lblTongTien.Text = total.ToString("N0");  
             }
         }
 
@@ -740,7 +724,6 @@ namespace _2312590_NNTDan_Lab07
             if (dgvBillItems.CurrentRow == null)
                 return;
 
-            // lấy BillDetail.Id của dòng đang chọn
             int billDetailId = Convert.ToInt32(dgvBillItems.CurrentRow.Cells["Id"].Value);
 
             using (var db = new RestaurantContext())
@@ -754,7 +737,7 @@ namespace _2312590_NNTDan_Lab07
             }
 
             LoadBillItems();
-            LoadTableButtons(); // update màu bàn nếu thành trống lại
+            LoadTableButtons();  
         }
 
         private void cmsNhapBan_Click(object sender, EventArgs e)
@@ -778,7 +761,6 @@ namespace _2312590_NNTDan_Lab07
                     return;
                 }
 
-                // move tất cả detail sang current bill
                 var details = db.BillDetails.Where(d => d.BillId == fromBill.Id).ToList();
                 foreach (var d in details)
                     d.BillId = _currentBillId.Value;

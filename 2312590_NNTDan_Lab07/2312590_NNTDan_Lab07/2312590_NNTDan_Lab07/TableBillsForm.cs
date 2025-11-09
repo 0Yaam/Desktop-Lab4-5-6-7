@@ -21,7 +21,7 @@ namespace _2312590_NNTDan_Lab07
             DiningTable tbl = _db.Tables.Find(_tableId);
             if (tbl == null)
                 return;
-            Text = $"HÃ³a Ä‘Æ¡n cá»§a {tbl.Name}";
+            Text = $"Hóa don c?a {tbl.Name}";
             var bills = _db.Bills.Where(b => b.TableId == _tableId)
                                 .OrderByDescending(b => b.CheckIn)
                                 .ToList();
@@ -38,7 +38,7 @@ namespace _2312590_NNTDan_Lab07
             Bill bill = _db.Bills.Find(billId);
             if (bill == null)
                 return;
-            lblInfo.Text = $"NgÃ y: {bill.CheckIn:dd/MM/yyyy HH:mm} - NhÃ¢n viÃªn: {bill.Staff?.DisplayName ?? string.Empty} - Giáº£m: {bill.DiscountPercent}% - {(bill.IsPaid ? "ÄÃ£ thanh toÃ¡n" : "ChÆ°a thanh toÃ¡n")}";
+            lblInfo.Text = $"Ngày: {bill.CheckIn:dd/MM/yyyy HH:mm} - Nhân viên: {bill.Staff?.DisplayName ?? string.Empty} - Gi?m: {bill.DiscountPercent}% - {(bill.IsPaid ? "Ðã thanh toán" : "Chua thanh toán")}";
             var items = _db.BillDetails.Where(d => d.BillId == billId)
                                     .Select(d => new { d.Id, FoodName = d.Food.Name, d.Quantity, d.UnitPrice, Total = d.Quantity * d.UnitPrice, d.Notes })
                                     .ToList();

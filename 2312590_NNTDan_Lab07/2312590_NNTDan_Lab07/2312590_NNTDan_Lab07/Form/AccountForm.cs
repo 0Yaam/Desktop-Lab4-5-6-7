@@ -20,9 +20,7 @@ namespace _2312590_NNTDan_Lab07
         {
             LoadRolesIntoFilter();
             LoadAccounts();
-            // Enable editing on the DataGridView
             dgvAccounts.ReadOnly = false;
-            // Make Id column read-only as it's the primary key
             dgvAccounts.Columns["Id"].ReadOnly = true;
         }
 
@@ -103,11 +101,11 @@ namespace _2312590_NNTDan_Lab07
 
             try
             {
-                acc.Password = "123";          // <-- đặt thẳng mật khẩu mới
-                                               // KHÔNG đổi IsActive, KHÔNG làm gì thêm
+                acc.Password = "123";       
+                                               
                 _db.SaveChanges();
 
-                LoadAccounts();                 // refresh grid để thấy giá trị mới
+                LoadAccounts();                
                 MessageBox.Show("Đã reset mật khẩu về 123.", "Thông báo",
                                 MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
@@ -148,7 +146,6 @@ namespace _2312590_NNTDan_Lab07
             }
             catch (System.Data.Entity.Infrastructure.DbUpdateException)
             {
-                // vẫn bị ràng buộc từ nơi khác (vd: Bill.StaffId…)
                 MessageBox.Show(
                     "Không thể xóa do đang được tham chiếu ở nơi khác (ràng buộc dữ liệu).\n" +
                     "Bạn có thể đặt Inactive thay cho xóa.",
@@ -174,14 +171,11 @@ namespace _2312590_NNTDan_Lab07
 
         private void dgvAccounts_CellEndEdit(object sender, DataGridViewCellEventArgs e)
         {
-            // Get the edited row
             var row = dgvAccounts.Rows[e.RowIndex];
             int id = (int)row.Cells["Id"].Value;
-            // Find the account in the database
             var account = _db.Accounts.Find(id);
             if (account == null)
                 return;
-            // Update the corresponding fields
             string columnName = dgvAccounts.Columns[e.ColumnIndex].Name;
             switch (columnName)
             {
@@ -204,9 +198,8 @@ namespace _2312590_NNTDan_Lab07
                     account.IsActive = (bool)row.Cells["IsActive"].Value;
                     break;
                 default:
-                    return; // Ignore other columns
+                    return; 
             }
-            // Save changes to database
             try
             {
                 _db.SaveChanges();
@@ -215,7 +208,6 @@ namespace _2312590_NNTDan_Lab07
             catch (Exception ex)
             {
                 MessageBox.Show($"Lỗi khi cập nhật: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                // Reload to revert changes in grid if needed
                 LoadAccounts();
             }
         }

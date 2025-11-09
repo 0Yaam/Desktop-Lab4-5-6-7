@@ -8,6 +8,6 @@ namespace Lab_Basic_Command
 {
     public static class Configs
     {
-        public static string conn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\TruongDan\\Downloads\\Lab_Basic_Command\\Lab_Basic_Command\\Lab_Basic_Command\\Lab4DB.mdf;Integrated Security=True";
+        public static string conn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\PC602\\Downloads\\Desktop-mybranch\\Lab_Basic_Command\\Lab_Basic_Command\\Lab_Basic_Command\\Lab4DB.mdf;Integrated Security=True";
     }
 }

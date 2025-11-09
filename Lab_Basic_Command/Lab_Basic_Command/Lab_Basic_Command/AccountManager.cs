@@ -24,15 +24,12 @@ namespace Lab_Basic_Command
         private void AccountManager_Load(object sender, EventArgs e)
         {
             LoadGroups();
-            // wire event after groups loaded
             cboGroup.SelectedIndexChanged += cboGroup_SelectedIndexChanged;
 
             LoadAccounts();
 
-            // selection handler for grid
             dgvAccounts.SelectionChanged += dgvAccounts_SelectionChanged;
 
-            // ensure right-click selects the row under the mouse so context menu actions (cmsViewRoles) work
             dgvAccounts.MouseDown += dgvAccounts_MouseDown;
         }
 
@@ -43,7 +40,6 @@ namespace Lab_Basic_Command
             {
                 using (SqlConnection conn = new SqlConnection(connectionString))
                 {
-                    // Replace with your real group table if exists. This is a safe default.
                     string query = @"
 						SELECT 1 as ID, N'Quản trị viên' as Name
 						UNION ALL
@@ -69,7 +65,6 @@ namespace Lab_Basic_Command
             }
         }
 
-        // LoadAccounts now applies cboGroup filter (parameterized) and chkActiveOnly filter.
         private void LoadAccounts()
         {
             try
@@ -77,15 +72,13 @@ namespace Lab_Basic_Command
                 using (SqlConnection conn = new SqlConnection(connectionString))
                 using (SqlCommand cmd = conn.CreateCommand())
                 {
-                    cmd.CommandText = "SELECT ID, Username, DisplayName, GroupID, IsActive FROM Account WHERE 1=1";
+                    cmd.CommandText = "SELECT ID, Username,Password, DisplayName, GroupID, IsActive FROM Account WHERE 1=1";
 
-                    // active filter
                     if (chkActiveOnly.Checked)
                     {
                         cmd.CommandText += " AND IsActive = 1";
                     }
 
-                    // group filter if a group is selected
                     int selectedGroupId;
                     if (cboGroup.SelectedValue != null && int.TryParse(cboGroup.SelectedValue.ToString(), out selectedGroupId))
                     {
@@ -101,9 +94,9 @@ namespace Lab_Basic_Command
 
                     dgvAccounts.DataSource = dt;
 
-                    // optional: set column headers
                     if (dgvAccounts.Columns["ID"] != null) dgvAccounts.Columns["ID"].HeaderText = "Mã";
                     if (dgvAccounts.Columns["Username"] != null) dgvAccounts.Columns["Username"].HeaderText = "Tên đăng nhập";
+                    if (dgvAccounts.Columns["Password"] != null) dgvAccounts.Columns["Password"].HeaderText = "Mật khẩu";
                     if (dgvAccounts.Columns["DisplayName"] != null) dgvAccounts.Columns["DisplayName"].HeaderText = "Tên hiển thị";
                     if (dgvAccounts.Columns["GroupID"] != null) dgvAccounts.Columns["GroupID"].HeaderText = "Nhóm";
                     if (dgvAccounts.Columns["IsActive"] != null) dgvAccounts.Columns["IsActive"].HeaderText = "Hoạt động";
@@ -118,7 +111,6 @@ namespace Lab_Basic_Command
         private void cboGroup_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (isLoading) return;
-            // when user changes group selection reload accounts to apply filter
             LoadAccounts();
         }
 
@@ -132,11 +124,11 @@ namespace Lab_Basic_Command
 
                 txtUserName.Text = row.Cells["Username"].Value?.ToString() ?? "";
                 txtDisplayName.Text = row.Cells["DisplayName"].Value?.ToString() ?? "";
-                txtPassword.Text = ""; // do not show password
+                
+                txtPassword.Text = row.Cells["Password"].Value?.ToString();
 
                 int groupId = Convert.ToInt32(row.Cells["GroupID"].Value ?? 0);
 
-                // prevent SelectedIndexChanged trigger cascade while setting SelectedValue
                 isLoading = true;
                 try
                 {
@@ -160,7 +152,6 @@ namespace Lab_Basic_Command
             }
         }
 
-        // New: ensure right-click selects the row under the mouse so cmsViewRoles works reliably
         private void dgvAccounts_MouseDown(object sender, MouseEventArgs e)
         {
             if (e.Button != MouseButtons.Right) return;
@@ -170,7 +161,6 @@ namespace Lab_Basic_Command
             {
                 dgvAccounts.ClearSelection();
                 dgvAccounts.Rows[hit.RowIndex].Selected = true;
-                // set current cell to ensure CurrentRow is correct
                 if (dgvAccounts.Rows[hit.RowIndex].Cells.Count > 0)
                 {
                     dgvAccounts.CurrentCell = dgvAccounts.Rows[hit.RowIndex].Cells[0];
@@ -178,11 +168,8 @@ namespace Lab_Basic_Command
             }
         }
 
-        // rest of the form methods unchanged...
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            // keep existing add logic
-            // Validation
             if (string.IsNullOrWhiteSpace(txtUserName.Text))
             {
                 MessageBox.Show("Vui lòng nhập tên đăng nhập!");
@@ -228,14 +215,12 @@ namespace Lab_Basic_Command
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            // unchanged update logic
             if (dgvAccounts.CurrentRow == null)
             {
                 MessageBox.Show("Vui lòng chọn tài khoản cần cập nhật!");
                 return;
             }
 
-            // Validation
             if (string.IsNullOrWhiteSpace(txtUserName.Text))
             {
                 MessageBox.Show("Vui lòng nhập tên đăng nhập!");
@@ -266,7 +251,6 @@ namespace Lab_Basic_Command
                             GroupID = @GroupID,
                             IsActive = @IsActive";
 
-                    // Chỉ cập nhật password nếu user nhập mới
                     if (!string.IsNullOrWhiteSpace(txtPassword.Text))
                     {
                         query += ", Password = @Password";
@@ -279,7 +263,7 @@ namespace Lab_Basic_Command
                         cmd.Parameters.AddWithValue("@Username", txtUserName.Text.Trim());
                         cmd.Parameters.AddWithValue("@DisplayName", txtDisplayName.Text.Trim());
                         cmd.Parameters.AddWithValue("@GroupID", Convert.ToInt32(cboGroup.SelectedValue));
-                        cmd.Parameters.AddWithValue("@IsActive", currentIsActive ? 1 : 0); // Giữ nguyên trạng thái hiện tại
+                        cmd.Parameters.AddWithValue("@IsActive", currentIsActive ? 1 : 0); 
                         cmd.Parameters.AddWithValue("@ID", id);
 
                         if (!string.IsNullOrWhiteSpace(txtPassword.Text))

@@ -13,7 +13,6 @@ namespace _2312590_NNTDan_Lab07
             Account u = CurrentUser;
             if (u == null || u.Roles == null)
                 return false;
-            // Admin when has ManageAccounts role
             foreach (Role r in u.Roles)
             {
                 if (r.Name == "ManageAccounts")

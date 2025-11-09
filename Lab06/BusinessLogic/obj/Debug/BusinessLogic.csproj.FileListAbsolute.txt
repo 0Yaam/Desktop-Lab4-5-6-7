@@ -36,3 +36,14 @@ C:\Users\PC602\Downloads\Desktop-mybranch\Desktop-mybranch\Lab06\BusinessLogic\b
 C:\Users\PC602\Downloads\Desktop-mybranch\Desktop-mybranch\Lab06\BusinessLogic\obj\Debug\BusinessLogic.csproj.CopyComplete
 C:\Users\PC602\Downloads\Desktop-mybranch\Desktop-mybranch\Lab06\BusinessLogic\bin\Debug\DB.mdf
 C:\Users\PC602\Downloads\Desktop-mybranch\Desktop-mybranch\Lab06\BusinessLogic\bin\Debug\DB_log.ldf
+C:\Users\PC602\Downloads\Desktop-mybranch\Lab06\BusinessLogic\bin\Debug\DB.mdf
+C:\Users\PC602\Downloads\Desktop-mybranch\Lab06\BusinessLogic\bin\Debug\DB_log.ldf
+C:\Users\PC602\Downloads\Desktop-mybranch\Lab06\BusinessLogic\bin\Debug\BusinessLogic.dll
+C:\Users\PC602\Downloads\Desktop-mybranch\Lab06\BusinessLogic\bin\Debug\BusinessLogic.pdb
+C:\Users\PC602\Downloads\Desktop-mybranch\Lab06\BusinessLogic\bin\Debug\DataAccess.dll
+C:\Users\PC602\Downloads\Desktop-mybranch\Lab06\BusinessLogic\bin\Debug\DataAccess.pdb
+C:\Users\PC602\Downloads\Desktop-mybranch\Lab06\BusinessLogic\obj\Debug\BusinessLogic.csproj.AssemblyReference.cache
+C:\Users\PC602\Downloads\Desktop-mybranch\Lab06\BusinessLogic\obj\Debug\BusinessLogic.csproj.CoreCompileInputs.cache
+C:\Users\PC602\Downloads\Desktop-mybranch\Lab06\BusinessLogic\obj\Debug\BusinessLogic.csproj.CopyComplete
+C:\Users\PC602\Downloads\Desktop-mybranch\Lab06\BusinessLogic\obj\Debug\BusinessLogic.dll
+C:\Users\PC602\Downloads\Desktop-mybranch\Lab06\BusinessLogic\obj\Debug\BusinessLogic.pdb

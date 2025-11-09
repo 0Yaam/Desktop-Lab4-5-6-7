@@ -24,3 +24,11 @@ C:\Users\PC602\Downloads\Desktop-mybranch\Desktop-mybranch\Lab06\DataAccess\obj\
 C:\Users\PC602\Downloads\Desktop-mybranch\Desktop-mybranch\Lab06\DataAccess\obj\Debug\DataAccess.pdb
 C:\Users\PC602\Downloads\Desktop-mybranch\Desktop-mybranch\Lab06\DataAccess\bin\Debug\DB.mdf
 C:\Users\PC602\Downloads\Desktop-mybranch\Desktop-mybranch\Lab06\DataAccess\bin\Debug\DB_log.ldf
+C:\Users\PC602\Downloads\Desktop-mybranch\Lab06\DataAccess\bin\Debug\DB.mdf
+C:\Users\PC602\Downloads\Desktop-mybranch\Lab06\DataAccess\bin\Debug\DB_log.ldf
+C:\Users\PC602\Downloads\Desktop-mybranch\Lab06\DataAccess\bin\Debug\DataAccess.dll
+C:\Users\PC602\Downloads\Desktop-mybranch\Lab06\DataAccess\bin\Debug\DataAccess.pdb
+C:\Users\PC602\Downloads\Desktop-mybranch\Lab06\DataAccess\obj\Debug\DataAccess.csproj.AssemblyReference.cache
+C:\Users\PC602\Downloads\Desktop-mybranch\Lab06\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\PC602\Downloads\Desktop-mybranch\Lab06\DataAccess\obj\Debug\DataAccess.dll
+C:\Users\PC602\Downloads\Desktop-mybranch\Lab06\DataAccess\obj\Debug\DataAccess.pdb

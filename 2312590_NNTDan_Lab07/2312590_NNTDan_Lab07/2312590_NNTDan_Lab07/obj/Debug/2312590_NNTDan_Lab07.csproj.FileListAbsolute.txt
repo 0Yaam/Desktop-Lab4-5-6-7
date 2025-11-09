@@ -65,3 +65,36 @@ C:\Users\TruongDan\Downloads\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\2312590_N
 C:\Users\TruongDan\Downloads\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\obj\Debug\2312590_.70848B6A.Up2Date
 C:\Users\TruongDan\Downloads\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\obj\Debug\Lab09_Entity Framework.exe
 C:\Users\TruongDan\Downloads\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\obj\Debug\Lab09_Entity Framework.pdb
+C:\Users\PC602\Downloads\Desktop-mybranch\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\obj\Debug\2312590_NNTDan_Lab07.csproj.AssemblyReference.cache
+C:\Users\PC602\Downloads\Desktop-mybranch\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\obj\Debug\_2312590_NNTDan_Lab07.AccountForm.resources
+C:\Users\PC602\Downloads\Desktop-mybranch\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\obj\Debug\_2312590_NNTDan_Lab07.AccountRolesForm.resources
+C:\Users\PC602\Downloads\Desktop-mybranch\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\obj\Debug\_2312590_NNTDan_Lab07.BillsForm.resources
+C:\Users\PC602\Downloads\Desktop-mybranch\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\obj\Debug\_2312590_NNTDan_Lab07.EmployeeForm.resources
+C:\Users\PC602\Downloads\Desktop-mybranch\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\obj\Debug\_2312590_NNTDan_Lab07.FoodForm.resources
+C:\Users\PC602\Downloads\Desktop-mybranch\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\obj\Debug\_2312590_NNTDan_Lab07.LoginForm.resources
+C:\Users\PC602\Downloads\Desktop-mybranch\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\obj\Debug\_2312590_NNTDan_Lab07.MainForm.resources
+C:\Users\PC602\Downloads\Desktop-mybranch\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\obj\Debug\_2312590_NNTDan_Lab07.MenuForm.resources
+C:\Users\PC602\Downloads\Desktop-mybranch\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\obj\Debug\_2312590_NNTDan_Lab07.Properties.Resources.resources
+C:\Users\PC602\Downloads\Desktop-mybranch\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\obj\Debug\_2312590_NNTDan_Lab07.RoleForm.resources
+C:\Users\PC602\Downloads\Desktop-mybranch\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\obj\Debug\_2312590_NNTDan_Lab07.TableBillsForm.resources
+C:\Users\PC602\Downloads\Desktop-mybranch\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\obj\Debug\_2312590_NNTDan_Lab07.TableForm.resources
+C:\Users\PC602\Downloads\Desktop-mybranch\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\obj\Debug\_2312590_NNTDan_Lab07.TableSalesLogForm.resources
+C:\Users\PC602\Downloads\Desktop-mybranch\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\obj\Debug\_2312590_NNTDan_Lab07.UpdateAccountForm.resources
+C:\Users\PC602\Downloads\Desktop-mybranch\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\obj\Debug\_2312590_NNTDan_Lab07.UpdateCategoryForm.resources
+C:\Users\PC602\Downloads\Desktop-mybranch\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\obj\Debug\_2312590_NNTDan_Lab07.UpdateFoodForm.resources
+C:\Users\PC602\Downloads\Desktop-mybranch\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\obj\Debug\_2312590_NNTDan_Lab07.UpdateRoleForm.resources
+C:\Users\PC602\Downloads\Desktop-mybranch\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\obj\Debug\_2312590_NNTDan_Lab07.UpdateTableForm.resources
+C:\Users\PC602\Downloads\Desktop-mybranch\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\obj\Debug\2312590_NNTDan_Lab07.csproj.GenerateResource.cache
+C:\Users\PC602\Downloads\Desktop-mybranch\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\obj\Debug\2312590_NNTDan_Lab07.csproj.CoreCompileInputs.cache
+C:\Users\PC602\Downloads\Desktop-mybranch\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\obj\Debug\Lab09_Entity Framework.exe
+C:\Users\PC602\Downloads\Desktop-mybranch\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\obj\Debug\Lab09_Entity Framework.pdb
+C:\Users\PC602\Downloads\Desktop-mybranch\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\bin\Debug\Lab7DB.mdf
+C:\Users\PC602\Downloads\Desktop-mybranch\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\bin\Debug\Lab7DB_log.ldf
+C:\Users\PC602\Downloads\Desktop-mybranch\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\bin\Debug\Lab09_Entity Framework.exe.config
+C:\Users\PC602\Downloads\Desktop-mybranch\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\bin\Debug\Lab09_Entity Framework.exe
+C:\Users\PC602\Downloads\Desktop-mybranch\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\bin\Debug\Lab09_Entity Framework.pdb
+C:\Users\PC602\Downloads\Desktop-mybranch\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\bin\Debug\EntityFramework.dll
+C:\Users\PC602\Downloads\Desktop-mybranch\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\PC602\Downloads\Desktop-mybranch\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\bin\Debug\EntityFramework.xml
+C:\Users\PC602\Downloads\Desktop-mybranch\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\PC602\Downloads\Desktop-mybranch\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\2312590_NNTDan_Lab07\obj\Debug\2312590_NNTDan_Lab07.csproj.CopyComplete

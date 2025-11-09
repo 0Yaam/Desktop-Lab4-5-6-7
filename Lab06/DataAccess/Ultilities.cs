@@ -6,7 +6,7 @@ namespace DataAccess
     {
         private const string StrName = "ConnectionStringName";
         public static readonly string ConnectionString =
-            @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\PC602\Downloads\Desktop-mybranch\Desktop-mybranch\Lab06\DataAccess\DB.mdf;Integrated Security=True";
+            @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\PC602\Downloads\Desktop-mybranch\Lab06\DataAccess\DB.mdf;Integrated Security=True";
 
         // Food
         public const string Food_GetAll = "Food_GetAll";
@@ -20,7 +20,7 @@ namespace DataAccess
         public const string Ban_InsertUpdateDelete = "Ban_InsertUpdateDelete";
 
         // Bills
-        public const string Bills_InsertUpdateDelete = "Bills_InsertUpdateDelete2"; // dùng bản gộp
+        public const string Bills_InsertUpdateDelete = "Bills_InsertUpdateDelete2";  
 
         // BillDetails
         public const string BillDetails_InsertUpdateDelete = "BillDetails_InsertUpdateDelete2";

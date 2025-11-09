@@ -15,7 +15,6 @@ namespace _2312590_NNTDan_Lab07
         static void Main()
         {
             Application.EnableVisualStyles();
-            // Use GDI+ text rendering by default to improve Unicode (Ti?ng Vi?t) rendering
             Application.SetCompatibleTextRenderingDefault(true);
             using (var login = new LoginForm())
             {

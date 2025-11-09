@@ -12,7 +12,6 @@ namespace _2312590_NNTDan_Lab07.Models
     {
         static RestaurantContext()
         {
-            // Use existing database without altering schema (keep data)
             Database.SetInitializer<RestaurantContext>(null);
         }
 
